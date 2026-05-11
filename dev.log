@@ -1,0 +1,444 @@
+
+> saran-portfolio@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://169.254.96.250:3000
+✓ Ready in 4.7s
+
+○ Compiling / ...
+ GET / 200 in 6.3s (next.js: 5.9s, application-code: 430ms)
+ GET /about 200 in 693ms (next.js: 576ms, application-code: 118ms)
+ GET / 200 in 134ms (next.js: 17ms, application-code: 117ms)
+ GET /about 200 in 89ms (next.js: 14ms, application-code: 75ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2477:13)
+ GET /experience 200 in 644ms (next.js: 596ms, application-code: 48ms)
+ GET /skills 200 in 807ms (next.js: 736ms, application-code: 71ms)
+ GET /projects 200 in 817ms (next.js: 740ms, application-code: 77ms)
+ GET /images/projects/project-one.jpg 404 in 596ms (next.js: 450ms, application-code: 145ms)
+ GET /images/projects/project-two.jpg 404 in 2.6s (next.js: 473ms, application-code: 2.1s)
+⨯ The requested resource isn't a valid image for /images/projects/project-one.jpg received null
+⨯ The requested resource isn't a valid image for /images/projects/project-two.jpg received null
+ GET /images/projects/project-three.jpg 404 in 2.6s (next.js: 523ms, application-code: 2.1s)
+⨯ The requested resource isn't a valid image for /images/projects/project-three.jpg received null
+ GET /apps 200 in 758ms (next.js: 706ms, application-code: 53ms)
+ GET /images/apps/app-one.jpg 404 in 154ms (next.js: 16ms, application-code: 138ms)
+⨯ The requested resource isn't a valid image for /images/apps/app-one.jpg received null
+ GET /images/apps/app-two.jpg 404 in 156ms (next.js: 64ms, application-code: 91ms)
+⨯ The requested resource isn't a valid image for /images/apps/app-two.jpg received null
+ GET /tools 200 in 631ms (next.js: 593ms, application-code: 38ms)
+ GET /resume 200 in 591ms (next.js: 547ms, application-code: 43ms)
+ GET /documents/resume.pdf 404 in 56ms (next.js: 9ms, application-code: 47ms)
+ GET /contact 200 in 519ms (next.js: 494ms, application-code: 26ms)
+ GET /contact 200 in 93ms (next.js: 9ms, application-code: 85ms)
+ GET /about 200 in 54ms (next.js: 7ms, application-code: 47ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2477:13)
+ GET /experience 200 in 72ms (next.js: 7ms, application-code: 65ms)
+✓ Compiled in 47ms
+ GET /contact 200 in 168ms (next.js: 87ms, application-code: 81ms)
+ GET /contact 200 in 32ms (next.js: 4ms, application-code: 28ms)
+✓ Compiled in 61ms
+ GET /contact 200 in 165ms (next.js: 75ms, application-code: 90ms)
+ GET /contact 200 in 57ms (next.js: 5ms, application-code: 52ms)
+✓ Compiled in 57ms
+ GET /contact 200 in 220ms (next.js: 132ms, application-code: 87ms)
+ GET /contact 200 in 44ms (next.js: 5ms, application-code: 39ms)
+✓ Compiled in 51ms
+ GET /contact 200 in 158ms (next.js: 76ms, application-code: 82ms)
+ GET /contact 200 in 48ms (next.js: 7ms, application-code: 41ms)
+✓ Compiled in 367ms
+ GET /contact 200 in 1107ms (next.js: 445ms, application-code: 662ms)
+ GET /contact 200 in 401ms (next.js: 97ms, application-code: 304ms)
+ GET /contact 200 in 267ms (next.js: 8ms, application-code: 259ms)
+ GET /contact 200 in 267ms (next.js: 37ms, application-code: 230ms)
+ GET /contact 200 in 268ms (next.js: 64ms, application-code: 203ms)
+ GET /contact 200 in 268ms (next.js: 98ms, application-code: 170ms)
+ GET /contact 200 in 280ms (next.js: 11ms, application-code: 269ms)
+ GET /contact 200 in 231ms (next.js: 12ms, application-code: 218ms)
+ GET /contact 200 in 186ms (next.js: 14ms, application-code: 172ms)
+ GET /contact 200 in 186ms (next.js: 53ms, application-code: 134ms)
+ GET /contact 200 in 186ms (next.js: 85ms, application-code: 101ms)
+ GET /contact 200 in 184ms (next.js: 111ms, application-code: 73ms)
+ GET /contact 200 in 211ms (next.js: 6ms, application-code: 205ms)
+ GET /contact 200 in 210ms (next.js: 7ms, application-code: 203ms)
+ GET /contact 200 in 177ms (next.js: 9ms, application-code: 167ms)
+ GET /contact 200 in 176ms (next.js: 39ms, application-code: 137ms)
+ GET /contact 200 in 176ms (next.js: 69ms, application-code: 107ms)
+ GET /contact 200 in 175ms (next.js: 96ms, application-code: 80ms)
+ GET /contact 200 in 42ms (next.js: 7ms, application-code: 34ms)
+✓ Compiled in 54ms
+ GET /contact 200 in 179ms (next.js: 76ms, application-code: 104ms)
+ GET /contact 200 in 58ms (next.js: 9ms, application-code: 49ms)
+✓ Compiled in 108ms
+ GET /contact 200 in 177ms (next.js: 77ms, application-code: 100ms)
+ GET /contact 200 in 53ms (next.js: 11ms, application-code: 42ms)
+ GET /experience 200 in 219ms (next.js: 76ms, application-code: 144ms)
+ GET /projects 200 in 249ms (next.js: 91ms, application-code: 158ms)
+ GET /contact 200 in 137ms (next.js: 9ms, application-code: 128ms)
+ GET /contact 200 in 70ms (next.js: 4ms, application-code: 66ms)
+ GET / 200 in 563ms (next.js: 144ms, application-code: 419ms)
+ GET /about 200 in 194ms (next.js: 127ms, application-code: 67ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2477:13)
+ GET /experience 200 in 65ms (next.js: 4ms, application-code: 61ms)
+ GET /projects 200 in 92ms (next.js: 6ms, application-code: 86ms)
+ GET /images/projects/metro-ceiling.jpg 404 in 310ms (next.js: 57ms, application-code: 253ms)
+⨯ The requested resource isn't a valid image for /images/projects/metro-ceiling.jpg received null
+ GET /images/projects/regional-train.jpg 404 in 314ms (next.js: 191ms, application-code: 123ms)
+ GET /images/projects/fit-validation.jpg 404 in 315ms (next.js: 218ms, application-code: 97ms)
+⨯ The requested resource isn't a valid image for /images/projects/regional-train.jpg received null
+⨯ The requested resource isn't a valid image for /images/projects/fit-validation.jpg received null
+ GET /apps 200 in 244ms (next.js: 155ms, application-code: 89ms)
+ GET /images/apps/portfolio-builder.jpg 404 in 151ms (next.js: 37ms, application-code: 114ms)
+⨯ The requested resource isn't a valid image for /images/apps/portfolio-builder.jpg received null
+ GET /images/apps/tolerance-calculator.jpg 404 in 156ms (next.js: 59ms, application-code: 97ms)
+ GET /images/apps/doc-assistant.jpg 404 in 157ms (next.js: 75ms, application-code: 82ms)
+⨯ The requested resource isn't a valid image for /images/apps/tolerance-calculator.jpg received null
+⨯ The requested resource isn't a valid image for /images/apps/doc-assistant.jpg received null
+ GET /tools 200 in 263ms (next.js: 165ms, application-code: 98ms)
+ GET /resume 200 in 250ms (next.js: 172ms, application-code: 77ms)
+ GET /documents/resume.pdf 404 in 67ms (next.js: 31ms, application-code: 37ms)
+ GET /documents/resume.pdf 404 in 70ms (next.js: 22ms, application-code: 49ms)
+ GET /contact 200 in 58ms (next.js: 6ms, application-code: 52ms)
+✓ Compiled in 639ms
+✓ Compiled in 141ms
+✓ Compiled in 152ms
+✓ Compiled in 170ms
+✓ Compiled in 210ms
+✓ Compiled in 158ms
+✓ Compiled in 593ms
+ GET /contact 200 in 253ms (next.js: 112ms, application-code: 141ms)
+ GET /contact 200 in 81ms (next.js: 9ms, application-code: 71ms)
+ GET /about 200 in 158ms (next.js: 84ms, application-code: 74ms)
+ GET /contact 200 in 57ms (next.js: 7ms, application-code: 51ms)
+ GET /contact 200 in 3.3s (next.js: 18ms, application-code: 3.3s)
+ GET / 200 in 918ms (next.js: 318ms, application-code: 600ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2477:13)
+ GET /contact 200 in 46ms (next.js: 9ms, application-code: 36ms)
+ GET /about 200 in 75ms (next.js: 14ms, application-code: 61ms)
+ GET /about 200 in 62ms (next.js: 7ms, application-code: 54ms)
+ GET / 200 in 50ms (next.js: 8ms, application-code: 41ms)
+ GET / 200 in 44ms (next.js: 9ms, application-code: 35ms)
+ GET /experience 200 in 135ms (next.js: 48ms, application-code: 87ms)
+ GET /skills 200 in 935ms (next.js: 483ms, application-code: 452ms)
+ GET /projects 200 in 91ms (next.js: 37ms, application-code: 54ms)
+ GET /images/projects/metro-ceiling.jpg 404 in 218ms (next.js: 43ms, application-code: 175ms)
+⨯ The requested resource isn't a valid image for /images/projects/metro-ceiling.jpg received null
+ GET /images/projects/fit-validation.jpg 404 in 224ms (next.js: 132ms, application-code: 92ms)
+ GET /images/projects/regional-train.jpg 404 in 224ms (next.js: 156ms, application-code: 67ms)
+⨯ The requested resource isn't a valid image for /images/projects/fit-validation.jpg received null
+⨯ The requested resource isn't a valid image for /images/projects/regional-train.jpg received null
+ GET /apps 200 in 135ms (next.js: 51ms, application-code: 83ms)
+ GET /images/apps/portfolio-builder.jpg 404 in 212ms (next.js: 23ms, application-code: 189ms)
+ GET /images/apps/tolerance-calculator.jpg 404 in 209ms (next.js: 41ms, application-code: 168ms)
+⨯ The requested resource isn't a valid image for /images/apps/portfolio-builder.jpg received null
+⨯ The requested resource isn't a valid image for /images/apps/tolerance-calculator.jpg received null
+ GET /images/apps/doc-assistant.jpg 404 in 212ms (next.js: 144ms, application-code: 68ms)
+⨯ The requested resource isn't a valid image for /images/apps/doc-assistant.jpg received null
+ GET /tools 200 in 113ms (next.js: 46ms, application-code: 67ms)
+ GET /resume 200 in 115ms (next.js: 44ms, application-code: 71ms)
+ GET /documents/resume.pdf 404 in 74ms (next.js: 10ms, application-code: 65ms)
+✓ Compiled in 86ms
+✓ Compiled in 223ms
+✓ Compiled in 197ms
+✓ Compiled in 95ms
+✓ Compiled in 152ms
+✓ Compiled in 129ms
+✓ Compiled in 359ms
+✓ Compiled in 538ms
+ GET /documents/resume.pdf 404 in 621ms (next.js: 242ms, application-code: 379ms)
+ GET /resume 200 in 1237ms (next.js: 16ms, application-code: 1221ms)
+ GET /resume 200 in 747ms (next.js: 124ms, application-code: 623ms)
+ GET /resume 200 in 459ms (next.js: 12ms, application-code: 447ms)
+ GET /resume 200 in 467ms (next.js: 149ms, application-code: 318ms)
+ GET /documents/resume.pdf 404 in 285ms (next.js: 8ms, application-code: 277ms)
+ GET /resume 200 in 234ms (next.js: 14ms, application-code: 220ms)
+ GET /resume 200 in 231ms (next.js: 49ms, application-code: 182ms)
+✓ Compiled in 1856ms
+ GET /documents/resume.pdf 404 in 265ms (next.js: 182ms, application-code: 84ms)
+ GET /documents/resume.pdf 404 in 2.1s (next.js: 253ms, application-code: 1887ms)
+ GET /resume 200 in 2.2s (next.js: 33ms, application-code: 2.2s)
+ GET /documents/resume.pdf 404 in 392ms (next.js: 75ms, application-code: 316ms)
+ GET /resume 200 in 710ms (next.js: 252ms, application-code: 457ms)
+ GET /resume 200 in 189ms (next.js: 7ms, application-code: 182ms)
+ GET /resume 200 in 151ms (next.js: 5ms, application-code: 145ms)
+ GET /resume 200 in 151ms (next.js: 69ms, application-code: 83ms)
+ GET / 200 in 358ms (next.js: 177ms, application-code: 181ms)
+ GET / 200 in 331ms (next.js: 7ms, application-code: 324ms)
+ GET / 200 in 329ms (next.js: 8ms, application-code: 322ms)
+ GET / 200 in 329ms (next.js: 33ms, application-code: 295ms)
+ GET / 200 in 329ms (next.js: 64ms, application-code: 265ms)
+ GET / 200 in 241ms (next.js: 9ms, application-code: 232ms)
+ GET / 200 in 294ms (next.js: 24ms, application-code: 269ms)
+ GET / 200 in 144ms (next.js: 5ms, application-code: 139ms)
+ GET / 200 in 111ms (next.js: 9ms, application-code: 102ms)
+ GET / 200 in 111ms (next.js: 31ms, application-code: 80ms)
+ GET / 200 in 111ms (next.js: 68ms, application-code: 43ms)
+[browser] React does not recognize the `animationTransition` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `animationtransition` instead. If you accidentally passed it from a parent component, remove it from the DOM element. 
+    at validateProperty (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:2094:60)
+    at warnUnknownProperties (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:2203:26)
+    at validatePropertiesInDevelopment (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10679:66)
+    at setInitialProperties (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10969:9)
+    at completeWork (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6979:35)
+    at runWithFiberInDEV (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at completeUnitOfWork (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:2094:60)
+[browser] Uncaught TypeError: Cannot read properties of undefined (reading 'title')
+    at TimelineItem (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/_0-rd3ye._.js?id=%255Bproject%255D%252Fcomponents%252FTimelineItem.tsx+%255Bapp-client%255D+%2528ecmascript%2529:48:65)
+    at Object.react_stack_bottom_frame (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:15037:24)
+    at renderWithHooks (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:4620:24)
+    at updateFunctionComponent (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6081:21)
+    at beginWork (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6691:24)
+    at runWithFiberInDEV (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopSync (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9449:40)
+    at renderRootSync (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9433:13)
+    at performWorkOnRoot (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9098:47)
+    at performWorkOnRootViaSchedulerTask (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at eval (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/_0-rd3ye._.js?id=%255Bproject%255D%252Fapp%252Fpage.tsx+%255Bapp-client%255D+%2528ecmascript%2529:647:423)
+    at Array.map (<anonymous>)
+    at Home (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/_0-rd3ye._.js?id=%255Bproject%255D%252Fapp%252Fpage.tsx+%255Bapp-client%255D+%2528ecmascript%2529:647:203)
+    at ClientPageRoot (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_0tt2wve._.js:4461:50)
+React does not recognize the `animationTransition` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `animationtransition` instead. If you accidentally passed it from a parent component, remove it from the DOM element.
+⨯ TypeError: Cannot read properties of undefined (reading 'title')
+    at TimelineItem (components\TimelineItem.tsx:27:24)
+  25 |             <div>
+  26 |               <h3 className="font-semibold text-lg text-slate-900">
+> 27 |                 {entry.title}
+     |                        ^
+  28 |               </h3>
+  29 |               <p className="text-accent-600 font-medium">{entry.company}</p>
+  30 |             </div> {
+  digest: '2195450683'
+}
+ GET / 500 in 276ms (next.js: 10ms, application-code: 267ms)
+[browser] React does not recognize the `animationTransition` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `animationtransition` instead. If you accidentally passed it from a parent component, remove it from the DOM element. 
+    at validateProperty (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:2094:60)
+    at warnUnknownProperties (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:2203:26)
+    at validatePropertiesInDevelopment (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10679:66)
+    at setInitialProperties (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10969:9)
+    at completeWork (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6979:35)
+    at runWithFiberInDEV (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at completeUnitOfWork (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopSync (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9449:40)
+    at renderRootSync (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9433:13)
+    at performWorkOnRoot (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:186)
+    at performWorkOnRootViaSchedulerTask (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:2094:60)
+[browser] Uncaught TypeError: Cannot read properties of undefined (reading 'title')
+    at TimelineItem (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/_0-rd3ye._.js:1072:65)
+    at Object.react_stack_bottom_frame (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:15037:24)
+    at renderWithHooks (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:4620:24)
+    at updateFunctionComponent (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6081:21)
+    at beginWork (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6691:24)
+    at runWithFiberInDEV (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopSync (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9449:40)
+    at renderRootSync (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9433:13)
+    at performWorkOnRoot (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9098:47)
+    at performWorkOnRootViaSchedulerTask (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at <unknown> (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/_0-rd3ye._.js:2127:423)
+    at Array.map (<anonymous>)
+    at Home (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/_0-rd3ye._.js:2127:203)
+    at ClientPageRoot (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_0tt2wve._.js:4461:50)
+✓ Compiled in 62ms
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ TypeError: Cannot read properties of undefined (reading 'title')
+    at TimelineItem (components\TimelineItem.tsx:27:24)
+  25 |             <div>
+  26 |               <h3 className="font-semibold text-lg text-slate-900">
+> 27 |                 {entry.title}
+     |                        ^
+  28 |               </h3>
+  29 |               <p className="text-accent-600 font-medium">{entry.company}</p>
+  30 |             </div> {
+  digest: '3692206686'
+}
+ GET /documents/resume.pdf 404 in 462ms (next.js: 74ms, application-code: 388ms)
+ GET /documents/resume.pdf 404 in 105ms (next.js: 14ms, application-code: 91ms)
+ GET / 500 in 353ms (next.js: 105ms, application-code: 248ms)
+ GET /documents/resume.pdf 404 in 105ms (next.js: 35ms, application-code: 70ms)
+ GET /resume 200 in 355ms (next.js: 18ms, application-code: 337ms)
+ GET /resume 200 in 97ms (next.js: 61ms, application-code: 36ms)
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ TypeError: Cannot read properties of undefined (reading 'title')
+    at TimelineItem (components\TimelineItem.tsx:27:24)
+  25 |             <div>
+  26 |               <h3 className="font-semibold text-lg text-slate-900">
+> 27 |                 {entry.title}
+     |                        ^
+  28 |               </h3>
+  29 |               <p className="text-accent-600 font-medium">{entry.company}</p>
+  30 |             </div> {
+  digest: '3692206686'
+}
+✓ Compiled in 296ms
+ GET / 500 in 583ms (next.js: 4ms, application-code: 579ms)
+ GET /documents/resume.pdf 404 in 249ms (next.js: 28ms, application-code: 221ms)
+ GET /resume 200 in 396ms (next.js: 91ms, application-code: 305ms)
+ GET /documents/resume.pdf 404 in 159ms (next.js: 8ms, application-code: 151ms)
+ GET /resume 200 in 242ms (next.js: 42ms, application-code: 200ms)
+ GET /documents/resume.pdf 404 in 155ms (next.js: 66ms, application-code: 90ms)
+ GET /resume 200 in 157ms (next.js: 32ms, application-code: 125ms)
+ GET /resume 200 in 82ms (next.js: 3ms, application-code: 79ms)
+ GET /resume 200 in 49ms (next.js: 8ms, application-code: 41ms)
+✓ Compiled in 842ms
+ GET /documents/resume.pdf 404 in 348ms (next.js: 83ms, application-code: 265ms)
+ GET /documents/resume.pdf 404 in 782ms (next.js: 232ms, application-code: 550ms)
+ GET /resume 200 in 1731ms (next.js: 10ms, application-code: 1721ms)
+ GET /resume 200 in 1112ms (next.js: 308ms, application-code: 805ms)
+ GET /documents/resume.pdf 404 in 742ms (next.js: 124ms, application-code: 617ms)
+ GET /resume 200 in 778ms (next.js: 26ms, application-code: 753ms)
+ GET /resume 200 in 579ms (next.js: 22ms, application-code: 557ms)
+ GET /resume 200 in 586ms (next.js: 113ms, application-code: 473ms)
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ TypeError: Cannot read properties of undefined (reading 'title')
+    at TimelineItem (components\TimelineItem.tsx:27:24)
+  25 |             <div>
+  26 |               <h3 className="font-semibold text-lg text-slate-900">
+> 27 |                 {entry.title}
+     |                        ^
+  28 |               </h3>
+  29 |               <p className="text-accent-600 font-medium">{entry.company}</p>
+  30 |             </div> {
+  digest: '3692206686'
+}
+ GET / 500 in 243ms (next.js: 18ms, application-code: 226ms)
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+✓ Compiled in 1075ms
+⨯ TypeError: Cannot read properties of undefined (reading 'title')
+    at TimelineItem (components\TimelineItem.tsx:27:24)
+  25 |             <div>
+  26 |               <h3 className="font-semibold text-lg text-slate-900">
+> 27 |                 {entry.title}
+     |                        ^
+  28 |               </h3>
+  29 |               <p className="text-accent-600 font-medium">{entry.company}</p>
+  30 |             </div> {
+  digest: '3692206686'
+}
+ GET /documents/resume.pdf 404 in 1181ms (next.js: 832ms, application-code: 349ms)
+ GET /documents/resume.pdf 404 in 3.5s (next.js: 697ms, application-code: 2.8s)
+ GET /resume 200 in 4.8s (next.js: 34ms, application-code: 4.8s)
+ GET / 500 in 3.4s (next.js: 400ms, application-code: 3.0s)
+ GET /resume 200 in 4.0s (next.js: 765ms, application-code: 3.3s)
+ GET /documents/resume.pdf 404 in 1907ms (next.js: 815ms, application-code: 1093ms)
+ GET /resume 200 in 2.2s (next.js: 561ms, application-code: 1595ms)
+ GET /resume 200 in 999ms (next.js: 118ms, application-code: 881ms)
+ GET /resume 200 in 997ms (next.js: 429ms, application-code: 567ms)
+✓ Compiled in 2.9s
+ GET /documents/resume.pdf 404 in 418ms (next.js: 189ms, application-code: 229ms)
+ GET /documents/resume.pdf 404 in 2.9s (next.js: 321ms, application-code: 2.6s)
+ GET /resume 200 in 3.1s (next.js: 51ms, application-code: 3.0s)
+ GET /documents/resume.pdf 404 in 900ms (next.js: 329ms, application-code: 571ms)
+ GET /resume 200 in 969ms (next.js: 215ms, application-code: 755ms)
+ GET /resume 200 in 673ms (next.js: 19ms, application-code: 654ms)
+ GET /resume 200 in 523ms (next.js: 6ms, application-code: 517ms)
+ GET /resume 200 in 523ms (next.js: 95ms, application-code: 429ms)
+ GET /resume 200 in 377ms (next.js: 176ms, application-code: 202ms)
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ TypeError: Cannot read properties of undefined (reading 'title')
+    at TimelineItem (components\TimelineItem.tsx:27:24)
+  25 |             <div>
+  26 |               <h3 className="font-semibold text-lg text-slate-900">
+> 27 |                 {entry.title}
+     |                        ^
+  28 |               </h3>
+  29 |               <p className="text-accent-600 font-medium">{entry.company}</p>
+  30 |             </div> {
+  digest: '3692206686'
+}
+ GET / 500 in 324ms (next.js: 30ms, application-code: 293ms)
+✓ Compiled in 963ms
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ TypeError: Cannot read properties of undefined (reading 'title')
+    at TimelineItem (components\TimelineItem.tsx:27:24)
+  25 |             <div>
+  26 |               <h3 className="font-semibold text-lg text-slate-900">
+> 27 |                 {entry.title}
+     |                        ^
+  28 |               </h3>
+  29 |               <p className="text-accent-600 font-medium">{entry.company}</p>
+  30 |             </div> {
+  digest: '3692206686'
+}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /documents/resume.pdf 404 in 1997ms (next.js: 36ms, application-code: 1962ms)
+ GET /documents/resume.pdf 404 in 684ms (next.js: 417ms, application-code: 267ms)
+ GET /resume 200 in 2.1s (next.js: 898ms, application-code: 1206ms)
+ GET /resume 200 in 1022ms (next.js: 208ms, application-code: 814ms)
+ GET /resume 200 in 298ms (next.js: 50ms, application-code: 248ms)
+ GET / 500 in 1073ms (next.js: 151ms, application-code: 922ms)
+ GET /documents/resume.pdf 404 in 1075ms (next.js: 496ms, application-code: 579ms)
+ GET /resume 200 in 225ms (next.js: 16ms, application-code: 209ms)
+ GET /resume 200 in 226ms (next.js: 64ms, application-code: 162ms)
+ GET /documents/resume.pdf 404 in 241ms (next.js: 38ms, application-code: 203ms)
+[browser] Uncaught TypeError: Cannot read properties of undefined (reading 'title')
+    at TimelineItem (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/_0-rd3ye._.js:1075:65)
+    at Object.react_stack_bottom_frame (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:15037:24)
+    at renderWithHooks (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:4620:24)
+    at updateFunctionComponent (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6081:21)
+    at beginWork (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6691:24)
+    at runWithFiberInDEV (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopSync (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9449:40)
+    at renderRootSync (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9433:13)
+    at performWorkOnRoot (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9098:47)
+    at performWorkOnRootViaSchedulerTask (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at <unknown> (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/_0-rd3ye._.js:2130:423)
+    at Array.map (<anonymous>)
+    at Home (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/_0-rd3ye._.js:2130:203)
+    at ClientPageRoot (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_0tt2wve._.js:4461:50)
+⨯ TypeError: Cannot read properties of undefined (reading 'title')
+    at TimelineItem (components\TimelineItem.tsx:27:24)
+  25 |             <div>
+  26 |               <h3 className="font-semibold text-lg text-slate-900">
+> 27 |                 {entry.title}
+     |                        ^
+  28 |               </h3>
+  29 |               <p className="text-accent-600 font-medium">{entry.company}</p>
+  30 |             </div> {
+  digest: '3692206686'
+}
+ GET / 500 in 158ms (next.js: 16ms, application-code: 143ms)
+[browser] Uncaught TypeError: Cannot read properties of undefined (reading 'title')
+    at TimelineItem (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/_0-rd3ye._.js:1075:65)
+    at Object.react_stack_bottom_frame (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:15037:24)
+    at renderWithHooks (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:4620:24)
+    at updateFunctionComponent (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6081:21)
+    at beginWork (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6691:24)
+    at runWithFiberInDEV (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopSync (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9449:40)
+    at renderRootSync (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9433:13)
+    at performWorkOnRoot (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9098:47)
+    at performWorkOnRootViaSchedulerTask (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at <unknown> (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/_0-rd3ye._.js:2130:423)
+    at Array.map (<anonymous>)
+    at Home (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/_0-rd3ye._.js:2130:203)
+    at ClientPageRoot (file://C:/Apps/Saran Portfolio/.next/dev/static/chunks/node_modules_next_dist_0tt2wve._.js:4461:50)
+✓ Compiled in 48ms
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /resume 200 in 521ms (next.js: 98ms, application-code: 423ms)
+ GET /documents/resume.pdf 404 in 446ms (next.js: 27ms, application-code: 419ms)
+ GET / 200 in 401ms (next.js: 89ms, application-code: 312ms)
+ GET /documents/resume.pdf 404 in 112ms (next.js: 9ms, application-code: 103ms)
+✓ Compiled in 49ms
+ GET /resume 200 in 357ms (next.js: 76ms, application-code: 281ms)
+ GET / 200 in 341ms (next.js: 111ms, application-code: 230ms)
+ GET /documents/resume.pdf 404 in 350ms (next.js: 25ms, application-code: 326ms)
+ GET /resume 200 in 347ms (next.js: 136ms, application-code: 211ms)
+ GET / 200 in 182ms (next.js: 6ms, application-code: 177ms)
+ GET /documents/resume.pdf 404 in 182ms (next.js: 36ms, application-code: 146ms)
+ GET /documents/resume.pdf 404 in 112ms (next.js: 11ms, application-code: 100ms)
+[?25h

@@ -37,7 +37,10 @@
       "PowerShell(Start-Sleep -Seconds 8; $response = curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001 2>&1; Write-Host \"Home page status: $response\"; curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/about 2>&1 | Write-Host \"About page status: $_\")",
       "PowerShell(Start-Sleep -Seconds 10; try { $home = Invoke-WebRequest -Uri \"http://localhost:3001\" -UseBasicParsing -TimeoutSec 5; Write-Host \"✓ Home page: $\\($home.StatusCode\\)\" } catch { Write-Host \"✗ Home page error: $\\($_.Exception.Message\\)\" }; try { $about = Invoke-WebRequest -Uri \"http://localhost:3001/about\" -UseBasicParsing -TimeoutSec 5; Write-Host \"✓ About page: $\\($about.StatusCode\\)\" } catch { Write-Host \"✗ About page error: $\\($_.Exception.Message\\)\" })",
       "Bash(findstr -i \"task\\\\|brief\\\\|progress\\\\|decision\")",
-      "Skill(schedule)"
+      "Skill(schedule)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Apps\\\\Saran Portfolio\" -Recurse -Directory -Depth 3)",
+      "Bash(Select-Object FullName)",
+      "Bash(Sort-Object FullName)"
     ]
   }
 }

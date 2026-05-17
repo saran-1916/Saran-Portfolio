@@ -3,7 +3,7 @@ import { SOCIAL_LINKS, NAVIGATION_ITEMS, SITE_METADATA } from "@/lib/constants";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-200 bg-slate-900 text-slate-100">
+    <footer className="border-t border-[rgba(15,23,42,0.08)] bg-[#111827] text-[#F8FAFC]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid gap-8 md:grid-cols-4">
           {/* Brand */}
@@ -132,7 +132,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-slate-400">
+        <div className="border-t border-[rgba(255,255,255,0.1)] mt-8 pt-8 text-center text-sm text-[#94a3b8]">
           <p>
             &copy; {new Date().getFullYear()} Saran S P. All rights reserved.
           </p>

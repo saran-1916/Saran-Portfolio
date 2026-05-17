@@ -36,7 +36,7 @@ export default function Home() {
   };
 
   return (
-    <div className="relative min-h-screen bg-slate-950 text-slate-100 overflow-hidden">
+    <div className="relative min-h-screen bg-[#F8FAFC] text-[#111827] overflow-hidden" style={{ "--accent": "#0F766E", "--accent-dark": "#115e59" } as React.CSSProperties}>
       {/* Home background - cinematic */}
       <HomeBackground />
 
@@ -49,7 +49,7 @@ export default function Home() {
           <section className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 pt-32 pb-20 overflow-hidden">
 
             {/* Engineering visual - BACKGROUND ONLY - Far background, non-interfering */}
-            <div className="absolute inset-0 opacity-10 pointer-events-none hidden lg:block z-0 flex items-center justify-center">
+            <div className="absolute inset-0 opacity-5 pointer-events-none hidden lg:block z-0 flex items-center justify-center">
               <div style={{ transform: 'scale(1.5)' }}>
                 <EngineeringHeroVisual />
               </div>
@@ -84,10 +84,10 @@ export default function Home() {
                 transition={{ duration: 0.9, delay: 0.2, ease: "easeOut" }}
               >
                 <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold leading-tight mb-2 tracking-tight">
-                  <span className="text-slate-100">Saran </span>
+                  <span className="text-[#111827]">Saran </span>
                   <span className="text-accent-400">S P</span>
                 </h1>
-                <p className="text-2xl sm:text-3xl font-light text-slate-300 mt-6 tracking-wide">
+                <p className="text-2xl sm:text-3xl font-light text-[#475569] mt-6 tracking-wide">
                   Mechanical CAD Engineer & Maker
                 </p>
               </motion.div>
@@ -97,7 +97,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9, delay: 0.3, ease: "easeOut" }}
-                className="text-slate-400 max-w-3xl mx-auto leading-relaxed mb-12 mt-8 text-lg"
+                className="text-[#475569] max-w-3xl mx-auto leading-relaxed mb-12 mt-8 text-lg"
               >
                 I develop interior ceiling systems and modular CAD architectures for metro, commuter, and regional train platforms. 5+ years of mechanical design expertise at Alstom, specialized in 3D integration, parametric design, and manufacturing-focused engineering.
               </motion.p>
@@ -128,7 +128,7 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.9, delay: 0.5, ease: "easeOut" }}
-                className="grid grid-cols-3 gap-8 max-w-3xl mx-auto pt-8 border-t border-slate-800/50"
+                className="grid grid-cols-3 gap-8 max-w-3xl mx-auto pt-8 border-t border-[rgba(15,23,42,0.08)]"
               >
                 {[
                   { value: "5+", label: "Years Experience" },
@@ -144,7 +144,7 @@ export default function Home() {
                     <p className="text-4xl font-bold text-accent-400 mb-2">
                       {stat.value}
                     </p>
-                    <p className="text-xs text-slate-500 uppercase tracking-wider font-medium">{stat.label}</p>
+                    <p className="text-xs text-[#475569] uppercase tracking-wider font-medium">{stat.label}</p>
                   </motion.div>
                 ))}
               </motion.div>
@@ -157,7 +157,7 @@ export default function Home() {
               transition={{ duration: 2, repeat: Infinity }}
             >
               <svg
-                className="w-6 h-6 text-slate-500"
+                className="w-6 h-6 text-[#475569]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -183,12 +183,12 @@ export default function Home() {
                 className="mb-20"
               >
                 <div className="mb-6">
-                  <div className="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent" />
+                  <div className="h-px bg-gradient-to-r from-transparent via-[rgba(15,23,42,0.12)] to-transparent" />
                 </div>
                 <h2 className="text-5xl sm:text-6xl font-bold mb-6">
                   Selected Projects
                 </h2>
-                <p className="text-slate-400 text-lg max-w-3xl">
+                <p className="text-[#475569] text-lg max-w-3xl">
                   Mechanical design case studies showcasing problem-solving, technical depth, and engineering excellence.
                 </p>
               </motion.div>
@@ -203,26 +203,23 @@ export default function Home() {
                     viewport={{ once: true }}
                   >
                     <a href={`/projects/${project.slug}`} className="group block">
-                      <div className="relative rounded-lg overflow-hidden border border-slate-800/50 hover:border-slate-700 transition-colors duration-300">
-                        {/* Background with gradient */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur" />
-
+                      <div className="relative rounded-lg overflow-hidden border border-[rgba(15,23,42,0.08)] hover:border-[rgba(15,23,42,0.2)] transition-colors duration-300 bg-white shadow-sm">
                         <div className="relative p-8 sm:p-12">
                           <div className="flex items-start justify-between mb-8">
                             <div>
                               <p className="text-accent-400 text-sm font-medium uppercase tracking-wider mb-3">
                                 {project.year}
                               </p>
-                              <h3 className="text-3xl sm:text-4xl font-bold text-slate-100 mb-4 group-hover:text-accent-400 transition-colors">
+                              <h3 className="text-3xl sm:text-4xl font-bold text-[#111827] mb-4 group-hover:text-accent-400 transition-colors">
                                 {project.title}
                               </h3>
                             </div>
                             <motion.div
-                              className="flex-shrink-0 w-12 h-12 rounded-lg border border-slate-700 flex items-center justify-center group-hover:bg-accent-500/10 group-hover:border-accent-500/30 transition-all duration-300"
+                              className="flex-shrink-0 w-12 h-12 rounded-lg border border-[rgba(15,23,42,0.08)] flex items-center justify-center group-hover:bg-accent-500/10 group-hover:border-accent-500/30 transition-all duration-300"
                               whileHover={{ scale: 1.1 }}
                             >
                               <svg
-                                className="w-5 h-5 text-slate-400 group-hover:text-accent-400 transition-colors"
+                                className="w-5 h-5 text-[#475569] group-hover:text-accent-400 transition-colors"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -236,14 +233,14 @@ export default function Home() {
                               </svg>
                             </motion.div>
                           </div>
-                          <p className="text-slate-400 mb-8 leading-relaxed text-lg">
+                          <p className="text-[#475569] mb-8 leading-relaxed text-lg">
                             {project.shortDescription}
                           </p>
                           <div className="flex flex-wrap gap-2">
                             {project.tools.slice(0, 4).map((tool) => (
                               <span
                                 key={tool}
-                                className="px-3 py-1 rounded-full bg-slate-700/30 text-slate-300 text-xs font-medium border border-slate-700/50"
+                                className="px-3 py-1 rounded-full bg-[rgba(15,23,42,0.06)] text-[#475569] text-xs font-medium border border-[rgba(15,23,42,0.08)]"
                               >
                                 {tool}
                               </span>
@@ -284,12 +281,12 @@ export default function Home() {
                 className="mb-16"
               >
                 <div className="mb-6">
-                  <div className="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent" />
+                  <div className="h-px bg-gradient-to-r from-transparent via-[rgba(15,23,42,0.12)] to-transparent" />
                 </div>
                 <h2 className="text-5xl sm:text-6xl font-bold mb-6">
                   Professional Experience
                 </h2>
-                <p className="text-slate-400 text-lg">
+                <p className="text-[#475569] text-lg">
                   Career journey in mechanical engineering, design, and technical leadership.
                 </p>
               </motion.div>
@@ -332,12 +329,12 @@ export default function Home() {
                 className="mb-16"
               >
                 <div className="mb-6">
-                  <div className="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent" />
+                  <div className="h-px bg-gradient-to-r from-transparent via-[rgba(15,23,42,0.12)] to-transparent" />
                 </div>
                 <h2 className="text-5xl sm:text-6xl font-bold mb-6">
                   Featured Applications
                 </h2>
-                <p className="text-slate-400 text-lg max-w-3xl">
+                <p className="text-[#475569] text-lg max-w-3xl">
                   Modern digital products combining engineering expertise with contemporary web technology.
                 </p>
               </motion.div>
@@ -349,10 +346,10 @@ export default function Home() {
                       <p className="text-accent-400 text-sm font-medium mb-2">
                         {app.year}
                       </p>
-                      <h3 className="text-xl font-bold text-slate-100 mb-3 flex-1">
+                      <h3 className="text-xl font-bold text-[#111827] mb-3 flex-1">
                         {app.title}
                       </h3>
-                      <p className="text-slate-300 text-sm mb-4 flex-1">
+                      <p className="text-[#475569] text-sm mb-4 flex-1">
                         {app.shortDescription}
                       </p>
                       <div className="flex gap-2">
@@ -409,12 +406,12 @@ export default function Home() {
                 viewport={{ once: true }}
               >
                 <div className="mb-12">
-                  <div className="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent" />
+                  <div className="h-px bg-gradient-to-r from-transparent via-[rgba(15,23,42,0.12)] to-transparent" />
                 </div>
                 <h2 className="text-5xl sm:text-6xl font-bold mb-8">
                   Let's Build Something Exceptional
                 </h2>
-                <p className="text-slate-400 text-lg mb-12 leading-relaxed">
+                <p className="text-[#475569] text-lg mb-12 leading-relaxed">
                   Interested in mechanical engineering roles, CAD projects, and digital product opportunities. Let's collaborate and create something remarkable.
                 </p>
                 <PremiumButton

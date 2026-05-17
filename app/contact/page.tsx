@@ -1,10 +1,10 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import AnimatedBackground from "@/components/AnimatedBackground";
+import ContactBackground from "@/components/backgrounds/ContactBackground";
 import ContactHero from "@/components/ContactHero";
 import PremiumInput from "@/components/PremiumInput";
 import PremiumTextarea from "@/components/PremiumTextarea";
@@ -27,10 +27,11 @@ export default function Contact() {
     const newErrors: Record<string, string> = {};
 
     if (!formData.name.trim()) newErrors.name = "Name is required";
+    else if (formData.name.trim().length < 2) newErrors.name = "Name must be at least 2 characters";
     if (!formData.email.trim()) newErrors.email = "Email is required";
-    if (!formData.email.includes("@")) newErrors.email = "Invalid email address";
-    if (!formData.subject.trim()) newErrors.subject = "Subject is required";
+    else if (!formData.email.includes("@")) newErrors.email = "Invalid email address";
     if (!formData.message.trim()) newErrors.message = "Message is required";
+    else if (formData.message.trim().length < 10) newErrors.message = "Message must be at least 10 characters";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -58,11 +59,25 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      // TODO: Integrate with email service (Resend, Formspree, etc.)
-      // Simulate network request
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...formData,
+          subject: formData.subject.trim() || undefined,
+        }),
+      });
 
-      console.log("Form submitted:", formData);
+      const data = await res.json().catch(() => ({}));
+
+      if (!res.ok) {
+        if (data.fields && typeof data.fields === "object") {
+          setErrors(data.fields as Record<string, string>);
+          return;
+        }
+        throw new Error(data.error ?? "Something went wrong.");
+      }
+
       setIsSuccess(true);
       setFormData({ name: "", email: "", subject: "", message: "" });
 
@@ -70,7 +85,7 @@ export default function Contact() {
         setIsSuccess(false);
       }, 5000);
     } catch (error) {
-      setErrors({ submit: "Something went wrong. Please try again." });
+      setErrors({ submit: error instanceof Error ? error.message : "Something went wrong. Please try again." });
     } finally {
       setIsSubmitting(false);
     }
@@ -130,9 +145,9 @@ export default function Contact() {
   ];
 
   return (
-    <div className="relative min-h-screen bg-slate-900 text-slate-100 overflow-hidden">
+    <div className="relative min-h-screen bg-[#F8FAFC] text-[#111827] overflow-hidden" style={{ "--accent": "#0F766E", "--accent-dark": "#115e59" } as React.CSSProperties}>
       {/* Animated background */}
-      <AnimatedBackground />
+      <ContactBackground />
 
       {/* Content */}
       <div className="relative z-20">
@@ -161,10 +176,10 @@ export default function Contact() {
                     viewport={{ once: true }}
                     className="mb-8"
                   >
-                    <h2 className="text-3xl font-bold text-slate-100 mb-2">
+                    <h2 className="text-3xl font-bold text-[#111827] mb-2">
                       Send Me a Message
                     </h2>
-                    <p className="text-slate-400">
+                    <p className="text-[#475569]">
                       Fill out the form below and I'll get back to you as soon as
                       possible.
                     </p>
@@ -195,12 +210,11 @@ export default function Contact() {
 
                   {/* Subject */}
                   <PremiumInput
-                    label="Subject"
+                    label="Subject (optional)"
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
                     placeholder="What would you like to discuss?"
-                    required
                     error={errors.subject}
                   />
 
@@ -239,7 +253,7 @@ export default function Contact() {
           </section>
 
           {/* Social Links Section */}
-          <section className="px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-700/50">
+          <section className="px-4 sm:px-6 lg:px-8 py-20 border-t border-[rgba(15,23,42,0.08)]">
             <div className="max-w-6xl mx-auto">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -248,10 +262,10 @@ export default function Contact() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-3xl font-bold text-slate-100 mb-2">
+                <h2 className="text-3xl font-bold text-[#111827] mb-2">
                   Other Ways to Connect
                 </h2>
-                <p className="text-slate-400">
+                <p className="text-[#475569]">
                   Choose your preferred method of communication
                 </p>
               </motion.div>
@@ -272,7 +286,7 @@ export default function Contact() {
           </section>
 
           {/* FAQ Section */}
-          <section className="px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-700/50">
+          <section className="px-4 sm:px-6 lg:px-8 py-20 border-t border-[rgba(15,23,42,0.08)]">
             <div className="max-w-3xl mx-auto">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -281,10 +295,10 @@ export default function Contact() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-3xl font-bold text-slate-100 mb-2">
+                <h2 className="text-3xl font-bold text-[#111827] mb-2">
                   Questions?
                 </h2>
-                <p className="text-slate-400 mb-8">
+                <p className="text-[#475569] mb-8">
                   Here's what you should know
                 </p>
 
@@ -317,12 +331,12 @@ export default function Contact() {
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                       viewport={{ once: true }}
-                      className="rounded-xl border border-slate-700 bg-slate-800/30 p-6 backdrop-blur-sm"
+                      className="rounded-xl border border-[rgba(15,23,42,0.08)] bg-white p-6 shadow-sm"
                     >
                       <h3 className="text-lg font-semibold text-accent-400 mb-3">
                         {faq.question}
                       </h3>
-                      <p className="text-slate-400 leading-relaxed">
+                      <p className="text-[#475569] leading-relaxed">
                         {faq.answer}
                       </p>
                     </motion.div>

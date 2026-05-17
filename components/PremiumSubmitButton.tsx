@@ -43,9 +43,9 @@ export default function PremiumSubmitButton({
           className="absolute inset-0 rounded-xl border border-accent-400 opacity-0 group-hover:opacity-50"
           animate={{
             boxShadow: [
-              "0 0 20px rgba(14, 165, 233, 0)",
-              "0 0 40px rgba(14, 165, 233, 0.3)",
-              "0 0 20px rgba(14, 165, 233, 0)",
+              "0 0 20px rgba(15, 118, 110, 0)",
+              "0 0 40px rgba(15, 118, 110, 0.3)",
+              "0 0 20px rgba(15, 118, 110, 0)",
             ],
           }}
           transition={{ duration: 2, repeat: Infinity }}

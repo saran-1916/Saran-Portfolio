@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 interface PremiumSkillBadgeProps {
   name: string;
-  level: "Expert" | "Advanced" | "Intermediate";
+  level?: "Expert" | "Advanced" | "Intermediate" | "Beginner";
   icon?: React.ReactNode;
   index?: number;
 }
@@ -13,11 +13,12 @@ const levelColors = {
   Expert: "from-accent-500 to-accent-600",
   Advanced: "from-accent-400 to-accent-500",
   Intermediate: "from-accent-300 to-accent-400",
+  Beginner: "from-accent-200 to-accent-300",
 };
 
 export default function PremiumSkillBadge({
   name,
-  level,
+  level = "Intermediate",
   icon,
   index = 0,
 }: PremiumSkillBadgeProps) {
@@ -30,7 +31,7 @@ export default function PremiumSkillBadge({
       whileHover={{ scale: 1.1, y: -4 }}
       className="relative group cursor-pointer"
     >
-      <div className="relative rounded-xl p-4 bg-slate-800/50 border border-slate-700/50 backdrop-blur-sm overflow-hidden">
+      <div className="relative rounded-xl p-4 bg-white border border-[rgba(15,23,42,0.08)] shadow-sm overflow-hidden">
         {/* Gradient background on hover */}
         <motion.div
           className={`absolute inset-0 bg-gradient-to-br ${levelColors[level]} opacity-0 group-hover:opacity-20 transition-opacity duration-300`}
@@ -47,7 +48,7 @@ export default function PremiumSkillBadge({
             </motion.div>
           )}
           <div className="flex-1">
-            <p className="font-semibold text-slate-100 text-sm">{name}</p>
+            <p className="font-semibold text-[#111827] text-sm">{name}</p>
             <p className="text-xs text-accent-400 font-medium">{level}</p>
           </div>
         </div>
@@ -56,8 +57,8 @@ export default function PremiumSkillBadge({
         <motion.div
           className="absolute inset-0 rounded-xl border border-accent-500/0 pointer-events-none"
           whileHover={{
-            borderColor: "rgba(14, 165, 233, 0.5)",
-            boxShadow: "0 0 20px rgba(14, 165, 233, 0.2)",
+            borderColor: "rgba(15,118,110,0.4)",
+            boxShadow: "0 0 20px rgba(15,118,110,0.12)",
           }}
         />
       </div>

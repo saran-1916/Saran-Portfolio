@@ -17,6 +17,8 @@ export default function AnimatedBackground() {
 
     const particles: Particle[] = [];
     const particleCount = 50;
+    const w = canvas.width;
+    const h = canvas.height;
 
     class Particle {
       x: number;
@@ -27,8 +29,8 @@ export default function AnimatedBackground() {
       opacity: number;
 
       constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
+        this.x = Math.random() * w;
+        this.y = Math.random() * h;
         this.vx = (Math.random() - 0.5) * 0.5;
         this.vy = (Math.random() - 0.5) * 0.5;
         this.radius = Math.random() * 1.5 + 0.5;
@@ -39,17 +41,17 @@ export default function AnimatedBackground() {
         this.x += this.vx;
         this.y += this.vy;
 
-        if (this.x > canvas.width) this.x = 0;
-        if (this.x < 0) this.x = canvas.width;
-        if (this.y > canvas.height) this.y = 0;
-        if (this.y < 0) this.y = canvas.height;
+        if (this.x > canvas!.width) this.x = 0;
+        if (this.x < 0) this.x = canvas!.width;
+        if (this.y > canvas!.height) this.y = 0;
+        if (this.y < 0) this.y = canvas!.height;
       }
 
       draw() {
-        ctx.fillStyle = `rgba(14, 165, 233, ${this.opacity})`;
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.fill();
+        ctx!.fillStyle = `rgba(14, 165, 233, ${this.opacity})`;
+        ctx!.beginPath();
+        ctx!.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx!.fill();
       }
     }
 

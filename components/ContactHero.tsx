@@ -21,7 +21,7 @@ export default function ContactHero() {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: "easeOut",
+        ease: "easeOut" as const,
       },
     },
   };
@@ -35,7 +35,7 @@ export default function ContactHero() {
     >
       {/* Animated gradient background elements */}
       <motion.div
-        className="absolute top-20 -right-40 w-80 h-80 bg-accent-500/20 rounded-full blur-3xl"
+        className="absolute top-20 -right-40 w-80 h-80 bg-accent-500/10 rounded-full blur-3xl"
         animate={{
           y: [0, 40, 0],
           x: [0, 20, 0],
@@ -47,7 +47,7 @@ export default function ContactHero() {
         }}
       />
       <motion.div
-        className="absolute bottom-20 -left-40 w-80 h-80 bg-accent-500/10 rounded-full blur-3xl"
+        className="absolute bottom-20 -left-40 w-80 h-80 bg-accent-500/5 rounded-full blur-3xl"
         animate={{
           y: [0, -40, 0],
           x: [0, -20, 0],
@@ -70,7 +70,7 @@ export default function ContactHero() {
         {/* Main heading */}
         <motion.div variants={itemVariants} className="mb-6">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-4">
-            <span className="block text-slate-100 mb-2">Let's Build</span>
+            <span className="block text-[#111827] mb-2">Let's Build</span>
             <motion.span
               className="block bg-gradient-to-r from-accent-400 via-accent-500 to-accent-400 bg-clip-text text-transparent"
               animate={{
@@ -93,7 +93,7 @@ export default function ContactHero() {
         {/* Subheading */}
         <motion.p
           variants={itemVariants}
-          className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed mb-8"
+          className="text-lg sm:text-xl text-[#475569] max-w-2xl mx-auto leading-relaxed mb-8"
         >
           Whether you're interested in collaboration, have a project in mind, or
           just want to chat about mechanical engineering and digital products—I'd
@@ -107,7 +107,7 @@ export default function ContactHero() {
             animate={{ scaleX: [0.5, 1, 0.5] }}
             transition={{ duration: 3, repeat: Infinity }}
           />
-          <span className="text-sm text-slate-400 font-medium">
+          <span className="text-sm text-[#475569] font-medium">
             Response time: 24-48 hours
           </span>
           <motion.div
@@ -125,7 +125,7 @@ export default function ContactHero() {
         transition={{ duration: 2, repeat: Infinity }}
       >
         <svg
-          className="w-6 h-6 text-slate-500"
+          className="w-6 h-6 text-[#475569]"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

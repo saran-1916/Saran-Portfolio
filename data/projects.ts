@@ -2,7 +2,7 @@ export interface ProjectCaseStudy {
   id: string;
   slug: string;
   title: string;
-  category: "mechanical" | "automotive" | "industrial" | "product";
+  category: "mechanical" | "automotive" | "industrial" | "product" | "research";
   shortDescription: string;
   overview: string;
   role: string;
@@ -22,115 +22,163 @@ export interface ProjectCaseStudy {
 export const projectsData: ProjectCaseStudy[] = [
   {
     id: "proj-001",
-    slug: "metro-ceiling-system-architecture",
-    title: "Modular Metro Ceiling System Architecture",
+    slug: "alstom-ax-ceiling-system-architecture",
+    title: "Alstom AX Modular Ceiling System — 36 Configurations",
     category: "mechanical",
     shortDescription:
-      "Designed comprehensive 3D ceiling architecture for metro train interiors with modular components reducing design cycles by 35%",
+      "Led end-to-end 3D ceiling design for Segment-A and Segment-B AX products, delivering 36 configurations across European and North American rail platforms with CATIA V5/V6 and Enovia PLM4A.",
     overview:
-      "Led the development of a modular ceiling system architecture for metro rolling stock, establishing CAD standards and reusable components that streamlined design iterations across multiple train configurations.",
-    role: "Lead Mechanical CAD Engineer - Responsible for 3D integration, master section design, and architectural standards",
+      "At Alstom, led the development of modular ceiling architecture for AX products across multiple rolling stock platforms. Delivered Segment-B (20 configs: Adesia EU/UK, Coradia Multilevel, Over Flush) and Segment-A (16 configs: MAS/LRV, Urban HC/MC, NAM TTC) ceiling systems from master sections through to manufacturing drawings compliant with CDSI standards.",
+    role: "CAD Engineer — responsible for 3D ceiling design, master sections, 2D drawing generation, modular handrail/handhold design, and engineering studies",
     problem:
-      "Previous projects used custom designs for each ceiling configuration, resulting in lengthy design cycles, inconsistent manufacturing drawings, and difficult supplier coordination. Each new train variant required complete redesign despite similar functional requirements.",
+      "Each train platform required ceiling designs adapted to varying structural, layout, and lighting constraints across EU/UK and North American specifications. Managing roofing variants and maintaining CDSI standards compliance while minimising platform-specific redesign effort was the core challenge.",
     solution:
-      "Developed a modular parametric architecture with standardized components, fixtures, and assembly logic. Created master sections in SolidWorks with controlled configurations allowing rapid configuration of new ceiling types while maintaining design consistency. Implemented GD&T standards and design-for-manufacturing principles.",
-    tools: ["SolidWorks", "Teamcenter PLM", "AutoCAD", "CATIA"],
+      "Developed ceiling configurations from master sections using CATIA V5/V6 with Enovia PLM4A. Standardised ceiling architecture across platforms to reduce redesign. Performed stackup and fit analysis for handrails/handholds, conducted weight analysis across all segments, standardised wire routing, and executed fit-form-function validation.",
+    tools: ["CATIA V5/V6", "Enovia PLM4A", "Teamcenter PLM", "GD&T", "Stackup Analysis", "CDSI Standards"],
     outcomes: [
       {
-        description:
-          "Established reusable modular components library with 12+ standardized elements",
-        impact: "35% reduction in design iteration time per new configuration",
+        description: "Segment-B: 20 ceiling configurations delivered across Adesia, Coradia Multilevel, and Over Flush platforms",
+        impact: "Modular adaptability across diverse EU/UK and NAM customer specifications",
       },
       {
-        description: "Created parametric master sections enabling quick configuration",
-        impact: "Timeline: 4 weeks → 10 days for new ceiling designs",
+        description: "Segment-A: 16 configurations for MAS/LRV, Urban HC/MC, and NAM TTC platforms",
+        impact: "Standardised ceiling architecture reducing platform-specific redesign effort",
       },
       {
-        description:
-          "Implemented GD&T standards across all interior components",
-        impact: "Zero manufacturing interpretation issues in production",
+        description: "Weight analysis, wire routing standardisation, and fit-form-function validation across all segments",
+        impact: "Engineering studies completed on time with zero CDSI non-conformances",
       },
       {
-        description:
-          "Developed detailed manufacturing drawings and BOMs for multi-supplier coordination",
-        impact: "Improved supplier quality and on-time delivery by 25%",
+        description: "Manufacturing and assembly drawings produced aligned with 3D models",
+        impact: "Full fabrication clarity and regulatory compliance",
       },
     ],
-    image: "/images/projects/metro-ceiling.jpg",
+    image: "/images/projects/alstom-ceiling.jpg",
     featured: true,
-    year: 2024,
+    year: 2025,
   },
   {
     id: "proj-002",
-    slug: "fit-validation-weight-optimization",
-    title: "Fit Validation & Weight Optimization Study",
-    category: "mechanical",
+    slug: "ford-transmission-driveline-design",
+    title: "Ford Transmission & Driveline Engineering",
+    category: "automotive",
     shortDescription:
-      "Comprehensive interference analysis and weight reduction study for train interior assemblies resulting in 8% weight savings",
+      "Performed fault diagnosis, stackup analysis, and oil volume studies on transmission assemblies at Ford Motor Company, managing full BOM lifecycle from concept to engineering release.",
     overview:
-      "Performed detailed 3D interference checking and tolerance analysis on interior ceiling assemblies across multiple train types. Conducted weight optimization study to reduce component masses while maintaining structural requirements.",
-    role: "Mechanical Engineer - Fit analysis, tolerance management, weight optimization, CAD documentation",
+      "Deputed to Ford Motor Company (Chennai) via Actalent to support transmission and driveline design. Managed design corrections, tolerance analysis, oil volume studies, and BOM lifecycle. Utilised Teamcenter, WERS, and CATIA V5 to ensure manufacturing and functional compliance.",
+    role: "Design Engineer — fault diagnosis, stackup analysis, oil volume studies, concept design, BOM management, DPA support",
     problem:
-      "Multiple interior assemblies were experiencing fit issues during manufacturing and assembly. Weight targets were exceeded by 12% on critical subsystems, affecting train performance and operating costs. Manual fit verification was time-consuming and prone to errors.",
+      "Transmission part assemblies had tolerance and fit issues causing rework cycles. Housing designs needed validation for oil volume and structural compliance. BOM management across multiple engineering stages required systematic lifecycle control.",
     solution:
-      "Implemented systematic 3D fit validation using SolidWorks with tolerance stackup analysis. Identified critical interference zones and optimized component dimensions and wall thicknesses. Conducted parametric weight studies using CAD model analysis combined with material property databases.",
-    tools: ["SolidWorks", "Tolerance Analysis", "Weight Management Tools"],
+      "Performed systematic fault diagnosis to identify root causes and drove design corrections. Executed stackup analysis and oil volume studies for housing validation. Managed full BOM lifecycle in Teamcenter and WERS. Supported DPA audits and maintained design data through engineering release.",
+    tools: ["CATIA V5", "Teamcenter PLM", "WERS", "GD&T", "Stackup Analysis", "Oil Volume Analysis", "MS Office Suite"],
     outcomes: [
       {
-        description:
-          "Completed fit validation on 15+ critical assembly junctions",
-        impact: "Zero fit issues in subsequent manufacturing batches",
+        description: "Fault diagnosis and design corrections on transmission part assemblies",
+        impact: "Reduced rework cycles and manufacturing non-conformances",
       },
       {
-        description: "Optimized component geometry and material selection",
-        impact: "8% weight reduction (120 kg per train unit)",
+        description: "Stackup Analysis and Oil Volume Studies for transmission housing designs",
+        impact: "Validated functional and manufacturing compliance",
       },
       {
-        description:
-          "Established tolerance stackup methodology for future designs",
-        impact: "Repeatable process reducing design review cycles by 40%",
-      },
-      {
-        description: "Documented all findings in engineering reports and drawings",
-        impact: "Knowledge base for continuous improvement",
+        description: "Full BOM lifecycle management from concept through engineering release",
+        impact: "Consistent data integrity across Teamcenter and WERS",
       },
     ],
-    image: "/images/projects/fit-validation.jpg",
+    image: "/images/projects/ford-transmission.jpg",
     featured: true,
     year: 2024,
   },
   {
     id: "proj-003",
-    slug: "regional-train-interior-design",
-    title: "Regional Train Interior System Design",
-    category: "mechanical",
+    slug: "marine-gearbox-shanthi-gears",
+    title: "Marine Gearbox with Integrated Clutch — R&D",
+    category: "industrial",
     shortDescription:
-      "Complete interior system design for regional train platform covering seating, handrails, and structural integration",
+      "Designed a marine gearbox with integrated clutch system for fisherman boat engines at Shanthi Gears (Murugappa Group), remastering 30% of existing design and developing the remainder through internal R&D.",
     overview:
-      "Designed complete interior subsystems for regional train rolling stock including ceiling panels, structural brackets, fastening systems, and integration with adjacent components.",
-    role: "Mechanical Designer - Full subsystem design from concept to manufacturing drawings",
+      "Led the full R&D and design cycle of a marine gearbox with integrated clutch system at Shanthi Gears Ltd., Coimbatore. Responsible for gear calculations, shaft and bearing selection, casting design, and BOM management through prototype and production phases.",
+    role: "Design Engineer Trainee — gear calculations, shaft/bearing selection using KissSoft/KissSys, casting design, BOM management",
     problem:
-      "Regional train platform required complete interior design with specific space constraints, cost targets, and modular integration requirements with existing platform architecture.",
+      "The fisherman boat engine application required a compact marine gearbox with an integrated clutch that met specific torque, durability, and corrosion resistance requirements. Existing gearbox architecture needed significant rework alongside new component development.",
     solution:
-      "Developed integrated CAD design following customer specifications and manufacturing constraints. Created parametric components allowing easy modification for future platform variants. Performed structural analysis to validate fastening systems and bracket designs.",
-    tools: ["SolidWorks", "FEA Analysis", "CATIA Integration", "GD&T"],
+      "Remastered 30% of the existing gearbox design and developed remaining components from ground up. Performed spur, helical, and bevel gear calculations using KissSoft and shaft/bearing selection using KissSys. Created casting designs for fabrication and managed BOMs for prototype and production phases.",
+    tools: ["KissSoft", "KissSys", "CATIA V5", "GD&T", "Casting Design", "MS Office Suite"],
     outcomes: [
       {
-        description: "Completed full system design meeting all technical specifications",
-        impact: "On-schedule program delivery",
+        description: "Full marine gearbox with integrated clutch system designed from R&D through prototype",
+        impact: "Successfully delivered for fisherman boat engine application",
       },
       {
-        description: "Created modular design enabling 60% component reuse",
-        impact: "Reduced future platform development costs",
+        description: "Gear calculations (spur, helical, bevel) and shaft/bearing selection completed",
+        impact: "Validated using KissSoft and KissSys for functional compliance",
       },
       {
-        description:
-          "Conducted structural validation of all critical load paths",
-        impact: "Approved for manufacturing without design changes",
+        description: "Casting designs and BOM management through prototype and production phases",
+        impact: "Prototype completed on schedule with no design changes required post-casting",
       },
     ],
-    image: "/images/projects/regional-train.jpg",
+    image: "/images/projects/marine-gearbox.jpg",
     featured: false,
-    year: 2023,
+    year: 2022,
+  },
+  {
+    id: "proj-004",
+    slug: "automated-toilet-cleaner-patent",
+    title: "Automated Toilet Cleaner — Published Patent",
+    category: "product",
+    shortDescription:
+      "Developed a self-cleaning and sanitising toilet bowl mechanism with minimal human intervention using advanced scrubbing and disinfecting systems. Patent No. 2020-41042046, published October 2020.",
+    overview:
+      "Final year project at KPR Institute of Engineering and Technology. Designed an automated toilet cleaning mechanism incorporating motorised scrubbing and chemical disinfection systems for hygienic maintenance with minimal human contact. Resulted in a published Indian patent.",
+    role: "Lead Designer — mechanism design, fabrication oversight, patent application",
+    problem:
+      "Manual toilet cleaning involves direct human contact with unhygienic surfaces and chemicals. Existing automated solutions were complex, expensive, or failed to clean effectively. The project aimed to deliver a low-cost, reliable automated alternative.",
+    solution:
+      "Designed a mechanised scrubbing and disinfecting system integrated into the toilet bowl geometry. The mechanism automates both the scrubbing motion and the dispensing of sanitising fluid, minimising human intervention while ensuring thorough cleaning coverage.",
+    tools: ["CAD Design", "Fabrication", "Mechanism Design"],
+    outcomes: [
+      {
+        description: "Self-cleaning mechanism designed and fabricated",
+        impact: "Functional prototype demonstrating automated scrubbing and disinfection",
+      },
+      {
+        description: "Indian Patent filed and granted",
+        impact: "Patent No. 2020-41042046 | Published: October 2020",
+      },
+    ],
+    image: "/images/projects/toilet-cleaner.jpg",
+    featured: false,
+    year: 2020,
+  },
+  {
+    id: "proj-005",
+    slug: "typha-frp-composite-research",
+    title: "Typha Angustifolia FRP Composite — Research Publication",
+    category: "research",
+    shortDescription:
+      "Determined tribological and thermomechanical properties of unidirectional Typha angustifolia fiber-reinforced epoxy composites. Published at ICCMES 2021 international conference.",
+    overview:
+      "Academic research project at KPR Institute of Engineering and Technology investigating the material properties of natural fiber composites using Typha angustifolia (cattail) as a reinforcement in epoxy matrix. Properties studied included wear behaviour, thermal stability, and mechanical performance of unidirectional laminate configurations.",
+    role: "Researcher — specimen fabrication, tribological and thermomechanical testing, data analysis, paper authoring",
+    problem:
+      "Natural fiber composites offer sustainable alternatives to synthetic FRP but require thorough characterisation of tribological and thermal behaviour before industrial adoption. Typha angustifolia, a widely available natural fiber, lacked published data on its composite performance.",
+    solution:
+      "Fabricated unidirectional Typha angustifolia fiber-reinforced epoxy composite specimens. Conducted tribological tests (wear rate, friction coefficient) and thermomechanical characterisation (TGA, DMA). Analysed results to establish property benchmarks for this novel composite system.",
+    tools: ["FRP Composite Fabrication", "Tribological Testing", "Thermomechanical Analysis", "Research & Documentation"],
+    outcomes: [
+      {
+        description: "Tribological and thermomechanical property data established for Typha angustifolia FRP",
+        impact: "First published dataset for this natural fiber composite system",
+      },
+      {
+        description: "Paper accepted and presented at international conference",
+        impact: "Published: ICCMES 2021 (International Conference on Chemical, Mechanical and Environmental Sciences), March 2021",
+      },
+    ],
+    image: "/images/projects/frp-composite.jpg",
+    featured: false,
+    year: 2021,
   },
 ];

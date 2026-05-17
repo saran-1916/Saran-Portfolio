@@ -15,25 +15,25 @@ export default function TimelineItem({ entry, isLast }: TimelineItemProps) {
 
       {/* Timeline dot */}
       <div className="relative flex items-start">
-        <div className="flex h-11 w-11 items-center justify-center rounded-full border-4 border-slate-900 bg-accent-500 shadow-lg shadow-accent-500/50">
-          <div className="h-2 w-2 rounded-full bg-slate-900" />
+        <div className="flex h-11 w-11 items-center justify-center rounded-full border-4 border-[#F8FAFC] bg-accent-500 shadow-lg shadow-accent-500/30">
+          <div className="h-2 w-2 rounded-full bg-white" />
         </div>
 
         {/* Content */}
         <div className="ml-6 flex-1 pt-1">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
             <div>
-              <h3 className="font-semibold text-lg text-slate-100">
+              <h3 className="font-semibold text-lg text-[#111827]">
                 {entry.title}
               </h3>
               <p className="text-accent-400 font-medium">{entry.company}</p>
             </div>
-            <div className="text-sm text-slate-400 font-medium">
+            <div className="text-sm text-[#475569] font-medium">
               {entry.startDate} — {entry.endDate}
             </div>
           </div>
 
-          <p className="text-slate-300 mb-3 leading-relaxed">
+          <p className="text-[#475569] mb-3 leading-relaxed">
             {entry.description}
           </p>
 
@@ -41,7 +41,7 @@ export default function TimelineItem({ entry, isLast }: TimelineItemProps) {
           {entry.achievements.length > 0 && (
             <ul className="space-y-2 mb-4">
               {entry.achievements.map((achievement, idx) => (
-                <li key={idx} className="flex gap-3 text-sm text-slate-300">
+                <li key={idx} className="flex gap-3 text-sm text-[#475569]">
                   <svg
                     className="w-5 h-5 text-accent-400 flex-shrink-0 mt-0.5"
                     fill="currentColor"
@@ -65,7 +65,7 @@ export default function TimelineItem({ entry, isLast }: TimelineItemProps) {
               {entry.technologies.map((tech) => (
                 <span
                   key={tech}
-                  className="text-xs bg-accent-500/10 text-accent-300 px-3 py-1 rounded-full border border-accent-500/20"
+                  className="text-xs bg-accent-500/10 text-accent-400 px-3 py-1 rounded-full border border-accent-500/20"
                 >
                   {tech}
                 </span>

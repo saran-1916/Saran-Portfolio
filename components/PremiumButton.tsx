@@ -37,7 +37,7 @@ export default function PremiumButton({
     primary:
       "bg-gradient-to-r from-accent-600 to-accent-500 text-white hover:shadow-lg hover:shadow-accent-500/50",
     secondary:
-      "border border-accent-500/50 text-accent-300 hover:border-accent-400 hover:shadow-lg hover:shadow-accent-500/20",
+      "border border-accent-500/50 text-accent-400 hover:border-accent-400 hover:shadow-lg hover:shadow-accent-500/20",
     tertiary:
       "text-accent-400 hover:text-accent-300 border-b border-accent-500/30 hover:border-accent-400",
   };

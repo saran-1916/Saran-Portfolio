@@ -44,8 +44,9 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${interSans.variable} ${jetbrainsMono.variable} h-full antialiased scroll-smooth`}
+      data-scroll-behavior="smooth"
     >
-      <body className="min-h-full flex flex-col bg-slate-50 text-slate-900">
+      <body className="min-h-full flex flex-col bg-[#F8FAFC] text-[#111827]">
         {children}
       </body>
     </html>

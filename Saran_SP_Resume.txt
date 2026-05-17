@@ -1,0 +1,81 @@
+SARAN S P
+Mechanical Design Engineer | CAD Specialist
+Bangalore, Karnataka, India
+saran.sp1916@gmail.com
++91 9597593185
+linkedin.com/in/saran-s-palanisamy
+--------------------------------------------------------------------------------
+
+                               [ Insert Photo ]
+
+--------------------------------------------------------------------------------
+Professional Summary
+Results-driven Mechanical Design Engineer with 5+ years of experience in rolling stock interior systems and automotive transmission & driveline design. Currently at Alstom delivering 36+ ceiling configurations across European and North American rail platforms. Proficient in CATIA V5/V6 with Enovia (PLM4A), Teamcenter, GD&T, DFA, DFM, and DFMEA. Holds a published patent and international research publication. Adept at bridging design intent with manufacturing requirements, driving on-time delivery and CDSI standards compliance.
+--------------------------------------------------------------------------------
+Work Experience
+CAD Engineer, Rolling Stock Interior Systems	Jan 2025  -  Present
+Alstom, Bangalore, Karnataka
+ Segment-B AX Ceiling Design: Led end-to-end 3D ceiling design for Segment-B AX products, delivering 20 ceiling configurations across Adesia (EU/UK), Coradia Multilevel, and Over Flush platforms  --  managing roofing and lighting variants to enable modular adaptability across customer specifications.
+ Segment-A AX Ceiling Design: Developed 16 ceiling configurations for MAS/LRV, Urban HC/MC, and NAM TTC platforms from master sections; adapted designs to varying structural, layout, and lighting constraints, standardising ceiling architecture and reducing platform-specific redesign effort.
+ 2D Drawing Generation: Produced manufacturing and assembly drawings aligned with 3D models, applying engineering rules and CDSI guidelines for fabrication clarity and regulatory compliance.
+ Modular Handrail & Handhold Design: Designed modular handrails and handholds for AX products; performed stackup and fit analysis to validate installation feasibility and minimise interface risks.
+ Engineering Studies: Executed detailed weight analysis across all segments, wire routing standardisation, concept studies for roof opening mechanisms, and fit-form-function validation.
+ Tools & PLM: CATIA V5/V6 with Enovia (PLM4A), Teamcenter PLM.
+
+Design Engineer, Transmission & Driveline	Nov 2022  -  Dec 2024
+Ford Motor Company, Chennai, Tamil Nadu  |  Deputed via Actalent (Allegis Services India Pvt. Ltd.)
+ Performed fault diagnosis on transmission part assemblies and drove design corrections to resolve tolerance and fit issues, reducing rework cycles.
+ Executed Stackup Analysis and Oil Volume Studies to validate transmission housing designs for functional and manufacturing compliance.
+ Delivered concept design creations and engineering updates, managing full BOM lifecycle from initial concept through engineering release.
+ Supported DPA (Design Process Audit), assembly management, data management, and report maintenance in Teamcenter and WERS.
+ Tools: CATIA V5, Teamcenter PLM, WERS, MS Office Suite, GD&T.
+
+Design Engineer Trainee, Research & Development	Apr 2021  -  Nov 2022
+Shanthi Gears Ltd.  -  Murugappa Group, Coimbatore, Tamil Nadu
+ Spearheaded R&D and full design cycle of a marine gearbox with integrated clutch system for fisherman boat engines  --  remastered 30% of an existing gearbox and developed the remaining design from ground up through internal R&D.
+ Performed gear calculations (spur, helical, bevel) and shaft/bearing selection using KissSoft and KissSys; created casting designs for fabrication with BOM management for prototype and production phases.
+ Tools: KissSoft, KissSys, CATIA V5, GD&T, MS Office Suite.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Education
+B.E. Mechanical Engineering  |  CGPA: 8.4 / 10	2017  -  2021
+KPR Institute of Engineering and Technology, Coimbatore, Tamil Nadu
+ Earned hands-on experience through projects in embedded systems and FRP (Fibre Reinforced Composites); developed strong CAD/CAM expertise throughout the programme.
+
+HSC | 79%
+Ambal Matric. Hr. Sec. School, Sirumugai, Coimbatore, Tamil Nadu  |  2015 - 2017
+SSLC | 92%
+Ambal Matric. Hr. Sec. School, Sirumugai, Coimbatore, Tamil Nadu  |  2014 - 2015
+--------------------------------------------------------------------------------
+Professional Certifications
+Post Graduate Diploma in Hybrid & Electrical Vehicles
+Skill-Lync	In Progress
+ Covers EV/HEV powertrain architecture, battery module system design, control systems, and suspension design for electric vehicle platforms.
+GD&T and Stackup Analysis  --  Advanced
+Udemy	August 2024
+ Mastered GD&T fundamentals through to advanced industrial applications and tolerance stackup analysis with practical case studies.
+FMEA Specialist Certification (Accredited)
+Udemy	June 2024
+ Certified in DFMEA/PFMEA methodology including Risk Priority Number (RPN) calculation, root cause analysis, and process integration best practices.
+--------------------------------------------------------------------------------
+Projects
+Design and Fabrication of Automated Toilet Cleaner
+KPR Institute of Engineering and Technology, Coimbatore	
+ Developed a self-cleaning and sanitising toilet bowl mechanism with minimal human intervention using advanced scrubbing and disinfecting systems.
+ Patent No. 2020-41042046  |  Published: October 2020
+Research and Development of Typha Angustifolia Fiber Reinforced Composite (FRP)
+KPR Institute of Engineering and Technology, Coimbatore	
+ Determined tribological and thermomechanical properties of unidirectional Typha angustifolia fiber-reinforced epoxy composites.
+ Published: International Conference on Chemical, Mechanical and Environmental Sciences (ICCMES 2021), March 2021.
+--------------------------------------------------------------------------------
+Skills
+Area of Expertise: Rolling Stock Interior Systems, Transmission & Driveline Design, Product Design & Development, Gear Calculation & Design, Modular Product Architecture
+CAD & Design Tools: CATIA V5/V6, Enovia (PLM4A), Pro-E Creo, Unigraphics NX, SolidWorks, Fusion 360, AutoCAD
+Gear Analysis: KissSoft, KissSys (Gear, Spline, Shaft & Bearing calculation and selection)
+PLM / Data Management: Teamcenter, Enovia PLM4A, WERS, Oracle
+Technical Methods: GD&T, Stackup Analysis, DFMEA, DFA, DFM, DPA, Draft Analysis, Oil Volume Analysis, MMOI, Weight Analysis
+Materials & Manufacturing: Sheet Metal, FRP Composites, Casting Design, Plastic Injection Moulding, Heat Treatment, Metallurgy
+Simulation / Analysis: Ansys (FEA), Fit-Form-Function Validation, Wire Routing Standardisation
+Languages: Tamil (Advanced)  |  English (Professional)  |  Kannada (Native)
+

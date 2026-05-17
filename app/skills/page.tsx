@@ -3,35 +3,18 @@
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import AnimatedBackground from "@/components/AnimatedBackground";
+import SkillsBackground from "@/components/backgrounds/SkillsBackground";
 import SectionWrapper from "@/components/SectionWrapper";
-import AnimatedHeading from "@/components/AnimatedHeading";
 import AnimatedDivider from "@/components/AnimatedDivider";
 import PremiumSkillBadge from "@/components/PremiumSkillBadge";
 import GlassCard from "@/components/GlassCard";
 import { skillsData } from "@/data/skills";
 
 export default function Skills() {
-  const getCategoryIcon = (category: string) => {
-    const icons: Record<string, string> = {
-      "CAD & 3D Design": "🎨",
-      "Mechanical Engineering Analysis": "⚙️",
-      "Manufacturing & Production": "🏭",
-      "Engineering Specializations": "🚄",
-      "Engineering Software": "💻",
-      "Web Development": "🌐",
-      "AI & Automation": "🤖",
-      "Professional Competencies": "⭐",
-    };
-    return icons[category] || "✨";
-  };
-
   return (
-    <div className="relative min-h-screen bg-slate-900 text-slate-100 overflow-hidden">
-      {/* Animated background */}
-      <AnimatedBackground />
+    <div className="relative min-h-screen bg-[#F8FAFC] text-[#111827] overflow-hidden" style={{ "--accent": "#0F766E", "--accent-dark": "#115e59" } as React.CSSProperties}>
+      <SkillsBackground />
 
-      {/* Content */}
       <div className="relative z-20">
         <Header />
 
@@ -68,7 +51,7 @@ export default function Skills() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
-                className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed"
+                className="text-xl text-[#475569] max-w-2xl mx-auto leading-relaxed"
               >
                 Deep expertise in mechanical engineering, CAD design, advanced
                 analysis, manufacturing optimization, and modern web technology
@@ -106,14 +89,12 @@ export default function Skills() {
                       className="flex items-center gap-4 mb-8"
                       whileHover={{ x: 8 }}
                     >
-                      <div className="text-3xl">
-                        {getCategoryIcon(category.category)}
-                      </div>
+                      <div className="w-1 h-8 bg-accent-400 rounded-full flex-shrink-0" />
                       <div>
-                        <h2 className="text-3xl font-bold text-slate-100">
+                        <h2 className="text-3xl font-bold text-[#111827]">
                           {category.category}
                         </h2>
-                        <div className="h-1 w-20 bg-gradient-to-r from-accent-500 to-transparent rounded-full mt-2" />
+                        <div className="h-px w-20 bg-gradient-to-r from-accent-500 to-transparent mt-2" />
                       </div>
                     </motion.div>
 
@@ -123,7 +104,11 @@ export default function Skills() {
                         <PremiumSkillBadge
                           key={skill.name}
                           name={skill.name}
-                          level={skill.proficiency}
+                          level={
+                            (skill.proficiency === "Expert" || skill.proficiency === "Advanced" || skill.proficiency === "Intermediate")
+                              ? skill.proficiency
+                              : "Intermediate"
+                          }
                           index={skillIndex}
                         />
                       ))}
@@ -154,20 +139,17 @@ export default function Skills() {
                 {[
                   {
                     level: "Expert",
-                    description:
-                      "Mastered through years of professional practice. Can lead, teach, and innovate.",
+                    description: "Mastered through years of professional practice. Can lead, teach, and innovate.",
                     color: "from-accent-500 to-accent-600",
                   },
                   {
                     level: "Advanced",
-                    description:
-                      "Deep proficiency. Can solve complex problems independently.",
+                    description: "Deep proficiency. Can solve complex problems independently.",
                     color: "from-accent-400 to-accent-500",
                   },
                   {
                     level: "Intermediate",
-                    description:
-                      "Solid understanding. Can apply effectively in projects.",
+                    description: "Solid understanding. Can apply effectively in projects.",
                     color: "from-accent-300 to-accent-400",
                   },
                 ].map((item, index) => (
@@ -180,15 +162,9 @@ export default function Skills() {
                   >
                     <GlassCard hover glow>
                       <div className="p-8">
-                        <div
-                          className={`h-3 w-full rounded-full bg-gradient-to-r ${item.color} mb-6`}
-                        />
-                        <h3 className="text-xl font-bold text-slate-100 mb-3">
-                          {item.level}
-                        </h3>
-                        <p className="text-slate-300 text-sm leading-relaxed">
-                          {item.description}
-                        </p>
+                        <div className={`h-1 w-full rounded-full bg-gradient-to-r ${item.color} mb-6`} />
+                        <h3 className="text-xl font-bold text-[#111827] mb-3">{item.level}</h3>
+                        <p className="text-[#475569] text-sm leading-relaxed">{item.description}</p>
                       </div>
                     </GlassCard>
                   </motion.div>
@@ -218,14 +194,14 @@ export default function Skills() {
                   {
                     title: "Professional Certifications",
                     description:
-                      "GD&T (ASME), SolidWorks Advanced, Design for Manufacturing. These aren't just credentials—they represent deep expertise validated by industry standards.",
+                      "GD&T Advanced (Udemy), FMEA Specialist (Udemy), PG Diploma in Hybrid & EV (Skill-Lync — in progress). Validated expertise, not just credentials.",
                     link: "/tools",
                     linkText: "View Certifications",
                   },
                   {
                     title: "Continuous Learning",
                     description:
-                      "Staying current with emerging technologies. Currently exploring advanced simulation techniques, AI-integrated design workflows, and modern engineering tools.",
+                      "Staying current with EV/HEV powertrain design, battery systems, and AI-integrated engineering workflows. Engineering is never static.",
                     link: "/tools",
                     linkText: "Explore Tools",
                   },
@@ -239,30 +215,16 @@ export default function Skills() {
                   >
                     <GlassCard hover glow>
                       <div className="p-8 flex flex-col h-full">
-                        <h3 className="text-2xl font-bold text-slate-100 mb-4">
-                          {item.title}
-                        </h3>
-                        <p className="text-slate-300 leading-relaxed mb-6 flex-1">
-                          {item.description}
-                        </p>
+                        <h3 className="text-2xl font-bold text-[#111827] mb-4">{item.title}</h3>
+                        <p className="text-[#475569] leading-relaxed mb-6 flex-1">{item.description}</p>
                         <motion.a
                           href={item.link}
                           className="text-accent-400 font-medium flex items-center gap-2 hover:text-accent-300 transition-colors"
                           whileHover={{ x: 4 }}
                         >
                           {item.linkText}
-                          <svg
-                            className="w-4 h-4"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M13 7l5 5m0 0l-5 5m5-5H6"
-                            />
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                           </svg>
                         </motion.a>
                       </div>

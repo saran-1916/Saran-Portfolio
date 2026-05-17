@@ -1,9 +1,9 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import AnimatedBackground from "@/components/AnimatedBackground";
+import ExperienceBackground from "@/components/backgrounds/ExperienceBackground";
 import SectionWrapper from "@/components/SectionWrapper";
 import AnimatedHeading from "@/components/AnimatedHeading";
 import AnimatedDivider from "@/components/AnimatedDivider";
@@ -14,9 +14,9 @@ import { experienceData } from "@/data/experience";
 
 export default function Experience() {
   return (
-    <div className="relative min-h-screen bg-slate-950 text-slate-100 overflow-hidden">
+    <div className="relative min-h-screen bg-[#F8FAFC] text-[#111827] overflow-hidden" style={{ "--accent": "#0F766E", "--accent-dark": "#115e59" } as React.CSSProperties}>
       {/* Animated background */}
-      <AnimatedBackground />
+      <ExperienceBackground />
 
       {/* Content */}
       <div className="relative z-20">
@@ -58,7 +58,7 @@ export default function Experience() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
-                className="text-xl sm:text-2xl font-light text-slate-300 max-w-3xl mx-auto leading-relaxed mb-12"
+                className="text-xl sm:text-2xl font-light text-[#475569] max-w-3xl mx-auto leading-relaxed mb-12"
               >
                 5+ years of progressive mechanical engineering experience, from design excellence to technical leadership, with expertise in CAD architecture and systems thinking.
               </motion.p>
@@ -71,7 +71,7 @@ export default function Experience() {
               transition={{ duration: 2, repeat: Infinity }}
             >
               <svg
-                className="w-6 h-6 text-slate-500"
+                className="w-6 h-6 text-[#475569]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -104,58 +104,27 @@ export default function Experience() {
                   viewport={{ once: true }}
                 />
                 <h2 className="text-5xl sm:text-6xl font-bold mb-6">Career Evolution</h2>
-                <p className="text-slate-400 text-lg">
+                <p className="text-[#475569] text-lg">
                   Progression through roles and responsibilities.
                 </p>
               </motion.div>
 
-              {/* Timeline with animated connecting line */}
-              <div className="relative">
-                {/* Animated vertical line */}
-                <motion.div
-                  className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent-500/50 via-accent-500 to-accent-500/50 -translate-x-1/2"
-                  initial={{ scaleY: 0 }}
-                  whileInView={{ scaleY: 1 }}
-                  transition={{ duration: 1.2, delay: 0.2 }}
-                  viewport={{ once: true }}
-                  style={{ transformOrigin: "top" }}
-                />
-
-                {/* Experience items */}
-                <div className="space-y-16 relative">
-                  {experienceData.map((entry, idx) => (
-                    <motion.div
-                      key={entry.id}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.6, delay: idx * 0.1 }}
-                      viewport={{ once: true }}
-                      className={`flex gap-12 ${
-                        idx % 2 === 0 ? "flex-row" : "flex-row-reverse"
-                      }`}
-                    >
-                      {/* Timeline dot */}
-                      <motion.div
-                        className="flex-shrink-0"
-                        whileHover={{ scale: 1.2 }}
-                      >
-                        <div className="relative w-12 h-12 rounded-full bg-gradient-to-br from-accent-500 to-accent-600 flex items-center justify-center shadow-lg shadow-accent-500/50 border-4 border-slate-900">
-                          <span className="text-white font-bold text-lg">
-                            {idx + 1}
-                          </span>
-                        </div>
-                      </motion.div>
-
-                      {/* Content card */}
-                      <div className="flex-1">
-                        <TimelineItem
-                          entry={entry}
-                          isLast={idx === experienceData.length - 1}
-                        />
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
+              {/* Experience items */}
+              <div className="space-y-16">
+                {experienceData.map((entry, idx) => (
+                  <motion.div
+                    key={entry.id}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: idx * 0.1 }}
+                    viewport={{ once: true }}
+                  >
+                    <TimelineItem
+                      entry={entry}
+                      isLast={idx === experienceData.length - 1}
+                    />
+                  </motion.div>
+                ))}
               </div>
             </div>
           </SectionWrapper>
@@ -178,7 +147,7 @@ export default function Experience() {
                   viewport={{ once: true }}
                 />
                 <h2 className="text-5xl sm:text-6xl font-bold mb-6">By The Numbers</h2>
-                <p className="text-slate-400 text-lg">
+                <p className="text-[#475569] text-lg">
                   Key metrics and accomplishments.
                 </p>
               </motion.div>
@@ -202,7 +171,7 @@ export default function Experience() {
                         <p className="text-5xl font-bold text-accent-400 mb-2">
                           {stat.value}
                         </p>
-                        <p className="text-slate-400 text-sm font-medium">
+                        <p className="text-[#475569] text-sm font-medium">
                           {stat.label}
                         </p>
                       </div>
@@ -250,7 +219,7 @@ export default function Experience() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                   viewport={{ once: true }}
-                  className="text-xl text-slate-300 max-w-2xl mx-auto mb-12 leading-relaxed"
+                  className="text-xl text-[#475569] max-w-2xl mx-auto mb-12 leading-relaxed"
                 >
                   Interested in mechanical engineering roles, technical leadership, product design, and complex system integration challenges. Let's collaborate.
                 </motion.p>

@@ -33,7 +33,7 @@ export default function AnimatedHeading({
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: { duration: 0.6, ease: "easeOut" as const },
     },
   };
 
@@ -53,7 +53,7 @@ export default function AnimatedHeading({
           ${level === "h1" ? "text-5xl sm:text-6xl lg:text-7xl" : ""}
           ${level === "h2" ? "text-4xl sm:text-5xl lg:text-6xl" : ""}
           ${level === "h3" ? "text-2xl sm:text-3xl lg:text-4xl" : ""}
-          font-bold leading-tight mb-4 text-slate-100
+          font-bold leading-tight mb-4 text-[#111827]
         `}
       >
         {words.map((word, index) => (
@@ -74,7 +74,7 @@ export default function AnimatedHeading({
       {subtitle && (
         <motion.p
           variants={wordVariants}
-          className="text-lg sm:text-xl text-slate-300 max-w-3xl leading-relaxed mt-6"
+          className="text-lg sm:text-xl text-[#475569] max-w-3xl leading-relaxed mt-6"
         >
           {subtitle}
         </motion.p>

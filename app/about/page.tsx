@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SectionWrapper from "@/components/SectionWrapper";
-import AnimatedBackground from "@/components/AnimatedBackground";
+import AboutBackground from "@/components/backgrounds/AboutBackground";
 import PremiumButton from "@/components/PremiumButton";
 import GlassCard from "@/components/GlassCard";
 
@@ -30,8 +30,8 @@ export default function About() {
   };
 
   return (
-    <div className="relative min-h-screen bg-slate-950 text-slate-100 overflow-hidden">
-      <AnimatedBackground />
+    <div className="relative min-h-screen bg-[#F8FAFC] text-[#111827] overflow-hidden" style={{ "--accent": "#0F766E", "--accent-dark": "#115e59" } as React.CSSProperties}>
+      <AboutBackground />
       <div className="relative z-20">
         <Header />
         <main className="relative z-10">
@@ -70,7 +70,7 @@ export default function About() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
-                className="text-xl sm:text-2xl font-light text-slate-300 max-w-3xl mx-auto leading-relaxed mb-12"
+                className="text-xl sm:text-2xl font-light text-[#475569] max-w-3xl mx-auto leading-relaxed mb-12"
               >
                 5+ years designing precision mechanical systems for rolling stock platforms. Now building digital products that marry engineering rigor with elegant user experiences.
               </motion.p>
@@ -97,7 +97,7 @@ export default function About() {
               transition={{ duration: 2, repeat: Infinity }}
             >
               <svg
-                className="w-6 h-6 text-slate-500"
+                className="w-6 h-6 text-[#475569]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -130,7 +130,7 @@ export default function About() {
                   viewport={{ once: true }}
                 />
                 <h2 className="text-5xl sm:text-6xl font-bold mb-6">The Journey</h2>
-                <p className="text-slate-400 text-lg max-w-2xl">
+                <p className="text-[#475569] text-lg max-w-2xl">
                   From precision engineering to digital product thinking — a story of systems, problem-solving, and continuous evolution.
                 </p>
               </motion.div>
@@ -138,25 +138,25 @@ export default function About() {
               <div className="space-y-12">
                 {[
                   {
-                    year: "2019",
-                    title: "Starting at Alstom",
-                    description:
-                      "Began my career in mechanical design, working on interior ceiling systems for rolling stock platforms. Learned parametric design, 3D integration, and the non-negotiable importance of manufacturing reality.",
-                    highlight: "First exposure to complex multi-discipline system integration"
-                  },
-                  {
                     year: "2021",
-                    title: "Parametric Design Mastery",
+                    title: "First Role — Shanthi Gears (Murugappa Group)",
                     description:
-                      "Developed 36+ ceiling configurations using parametric CAD architecture. This taught me the power of systematic thinking — small changes, massive variant generation, elegant scalability.",
-                    highlight: "Designed systems that could adapt to 50+ variations without manual rework"
+                      "Started my engineering career in R&D at Shanthi Gears, Coimbatore. Designed a marine gearbox with integrated clutch from the ground up — performing gear calculations with KissSoft/KissSys and creating casting designs for prototype fabrication.",
+                    highlight: "First exposure to full product design cycle: R&D → calculations → casting → BOM"
                   },
                   {
-                    year: "2023",
-                    title: "Technical Leadership",
+                    year: "2022",
+                    title: "Automotive Engineering — Ford Motor Company",
                     description:
-                      "Led technical initiatives, mentored junior engineers, and refined manufacturing design practices. Discovered that good engineering isn't just technical — it's about communicating precision.",
-                    highlight: "Bridged the gap between design intent and manufacturing reality"
+                      "Deputed to Ford Motor Company (Chennai) to work on transmission and driveline systems. Performed fault diagnosis, stackup and oil volume analysis, and managed full BOM lifecycle in Teamcenter and WERS.",
+                    highlight: "Bridged design intent with manufacturing reality in high-tolerance automotive assemblies"
+                  },
+                  {
+                    year: "2025",
+                    title: "Rolling Stock Interiors — Alstom",
+                    description:
+                      "Joined Alstom to lead ceiling design for AX rolling stock products. Delivering 36 configurations across EU/UK and North American platforms using CATIA V5/V6 with Enovia PLM4A — from master sections through CDSI-compliant manufacturing drawings.",
+                    highlight: "36+ ceiling configurations across Adesia, Coradia Multilevel, LRV, and TTC platforms"
                   },
                   {
                     year: "2024",
@@ -190,8 +190,8 @@ export default function About() {
                       {/* Content */}
                       <div className="pb-8">
                         <p className="text-accent-400 text-sm font-bold uppercase tracking-wider mb-2">{milestone.year}</p>
-                        <h3 className="text-2xl font-bold text-slate-100 mb-3">{milestone.title}</h3>
-                        <p className="text-slate-400 leading-relaxed mb-4">{milestone.description}</p>
+                        <h3 className="text-2xl font-bold text-[#111827] mb-3">{milestone.title}</h3>
+                        <p className="text-[#475569] leading-relaxed mb-4">{milestone.description}</p>
                         <div className="inline-block px-3 py-1.5 rounded-full bg-accent-400/10 border border-accent-400/30">
                           <p className="text-accent-300 text-sm font-medium">{milestone.highlight}</p>
                         </div>
@@ -221,7 +221,7 @@ export default function About() {
                   viewport={{ once: true }}
                 />
                 <h2 className="text-5xl sm:text-6xl font-bold mb-6">Design Philosophy</h2>
-                <p className="text-slate-400 text-lg">
+                <p className="text-[#475569] text-lg">
                   Core principles that guide how I approach problems, design systems, and build products.
                 </p>
               </motion.div>
@@ -270,8 +270,8 @@ export default function About() {
                           className="h-0.5 bg-accent-400 mb-6"
                         />
                         <div className="text-4xl mb-4">{principle.icon}</div>
-                        <h3 className="text-xl font-bold text-slate-100 mb-3">{principle.title}</h3>
-                        <p className="text-slate-300 leading-relaxed">{principle.description}</p>
+                        <h3 className="text-xl font-bold text-[#111827] mb-3">{principle.title}</h3>
+                        <p className="text-[#475569] leading-relaxed">{principle.description}</p>
                       </div>
                     </GlassCard>
                   </motion.div>
@@ -298,7 +298,7 @@ export default function About() {
                   viewport={{ once: true }}
                 />
                 <h2 className="text-5xl sm:text-6xl font-bold mb-6">How I Work</h2>
-                <p className="text-slate-400 text-lg">
+                <p className="text-[#475569] text-lg">
                   My approach to solving problems and delivering results.
                 </p>
               </motion.div>
@@ -342,8 +342,8 @@ export default function About() {
                         <span className="text-2xl font-bold text-accent-400">{step.step}</span>
                       </motion.div>
                       <div className="flex-1 pt-2">
-                        <h3 className="text-xl font-bold text-slate-100 mb-2">{step.title}</h3>
-                        <p className="text-slate-400 leading-relaxed">{step.description}</p>
+                        <h3 className="text-xl font-bold text-[#111827] mb-2">{step.title}</h3>
+                        <p className="text-[#475569] leading-relaxed">{step.description}</p>
                       </div>
                     </div>
                   </motion.div>
@@ -370,7 +370,7 @@ export default function About() {
                   viewport={{ once: true }}
                 />
                 <h2 className="text-5xl sm:text-6xl font-bold mb-6">Currently Building</h2>
-                <p className="text-slate-400 text-lg">
+                <p className="text-[#475569] text-lg">
                   Active projects that merge mechanical thinking with digital product design.
                 </p>
               </motion.div>
@@ -408,8 +408,8 @@ export default function About() {
                             <span className="text-xl">⚡</span>
                           </motion.div>
                           <div className="flex-1">
-                            <h3 className="text-xl font-bold text-slate-100 mb-2">{project.title}</h3>
-                            <p className="text-slate-300 leading-relaxed">{project.description}</p>
+                            <h3 className="text-xl font-bold text-[#111827] mb-2">{project.title}</h3>
+                            <p className="text-[#475569] leading-relaxed">{project.description}</p>
                           </div>
                         </div>
                       </div>
@@ -438,7 +438,7 @@ export default function About() {
                   viewport={{ once: true }}
                 />
                 <h2 className="text-5xl sm:text-6xl font-bold mb-6">Where I'm Headed</h2>
-                <p className="text-slate-400 text-lg">
+                <p className="text-[#475569] text-lg">
                   The future direction of my career and impact.
                 </p>
               </motion.div>
@@ -471,8 +471,8 @@ export default function About() {
                     <GlassCard hover>
                       <div className="p-8 text-center">
                         <div className="text-5xl mb-4">{vision.icon}</div>
-                        <h3 className="text-xl font-bold text-slate-100 mb-3">{vision.title}</h3>
-                        <p className="text-slate-300 leading-relaxed text-sm">{vision.description}</p>
+                        <h3 className="text-xl font-bold text-[#111827] mb-3">{vision.title}</h3>
+                        <p className="text-[#475569] leading-relaxed text-sm">{vision.description}</p>
                       </div>
                     </GlassCard>
                   </motion.div>
@@ -485,7 +485,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="mt-20 pt-16 border-t border-slate-800/50"
+                className="mt-20 pt-16 border-t border-[rgba(15,23,42,0.08)]"
               >
                 <h3 className="text-3xl font-bold mb-12 text-center">By The Numbers</h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -510,7 +510,7 @@ export default function About() {
                           >
                             {stat.value}
                           </motion.p>
-                          <p className="text-slate-400 text-sm font-medium">{stat.label}</p>
+                          <p className="text-[#475569] text-sm font-medium">{stat.label}</p>
                         </div>
                       </GlassCard>
                     </motion.div>
@@ -557,7 +557,7 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                   viewport={{ once: true }}
-                  className="text-xl text-slate-300 max-w-2xl mx-auto mb-12 leading-relaxed"
+                  className="text-xl text-[#475569] max-w-2xl mx-auto mb-12 leading-relaxed"
                 >
                   I'm looking for roles in mechanical engineering, CAD product design, digital product opportunities, and technical challenges that require precision thinking, systems expertise, and manufacturing rigor.
                 </motion.p>
@@ -578,7 +578,7 @@ export default function About() {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                   viewport={{ once: true }}
-                  className="text-sm text-slate-500 mt-12 font-medium tracking-wide"
+                  className="text-sm text-[#475569] mt-12 font-medium tracking-wide"
                 >
                   saransp6@gmail.com • Based in India • Available for opportunities
                 </motion.p>

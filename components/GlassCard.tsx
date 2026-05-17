@@ -26,7 +26,7 @@ export default function GlassCard({
       transition={{ duration: 0.6, delay: (index || 0) * 0.1 }}
       viewport={{ once: true }}
       whileHover={hover ? { y: -8, scale: 1.02 } : {}}
-      className={`relative rounded-2xl border border-slate-700/50 bg-slate-800/30 backdrop-blur-md overflow-hidden transition-all duration-300 ${className}`}
+      className={`relative rounded-2xl border border-[rgba(15,23,42,0.08)] bg-white shadow-sm overflow-hidden transition-all duration-300 ${className}`}
       {...motionProps}
     >
       {/* Background glow */}
@@ -39,8 +39,8 @@ export default function GlassCard({
         <motion.div
           className="absolute inset-0 rounded-2xl border border-accent-500/0 pointer-events-none"
           whileHover={{
-            borderColor: "rgba(14, 165, 233, 0.5)",
-            boxShadow: "0 0 30px rgba(14, 165, 233, 0.2)",
+            borderColor: "rgba(15,118,110,0.4)",
+            boxShadow: "0 0 30px rgba(15,118,110,0.12)",
           }}
         />
       )}

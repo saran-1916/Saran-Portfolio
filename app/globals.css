@@ -1,13 +1,13 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
 :root {
-  /* Industrial & Premium Color Palette */
-  --background: #f8f9fa;
-  --foreground: #1a1f2e;
-  --accent: #0ea5e9; /* Bright blue for engineering/tech feel */
-  --accent-dark: #0284c7;
-  --text-muted: #64748b;
-  --border: #e2e8f0;
+  /* Portfolio Color Palette */
+  --background: #F8FAFC;
+  --foreground: #111827;
+  --accent: #0F766E; /* Teal */
+  --accent-dark: #115e59;
+  --text-muted: #475569;
+  --border: rgba(15,23,42,0.08);
 }
 
 @theme inline {
@@ -19,6 +19,12 @@
   --color-border: var(--border);
   --font-sans: var(--font-inter);
   --font-mono: var(--font-mono);
+
+  /* Accent numbered scale â€” responds to per-page --accent CSS variable */
+  --color-accent-300: color-mix(in srgb, var(--accent) 70%, white);
+  --color-accent-400: var(--accent);
+  --color-accent-500: var(--accent-dark);
+  --color-accent-600: color-mix(in srgb, var(--accent-dark) 80%, black);
 }
 
 /* Smooth scrolling and general styles */

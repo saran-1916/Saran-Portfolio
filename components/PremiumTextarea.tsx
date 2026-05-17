@@ -38,15 +38,15 @@ export default function PremiumTextarea({
       <div
         className={`relative rounded-xl border-2 transition-all duration-300 ${
           isFocused
-            ? "border-accent-500 shadow-lg shadow-accent-500/20"
-            : "border-slate-700 hover:border-slate-600"
+            ? "border-accent-500 shadow-lg shadow-accent-500/10"
+            : "border-[rgba(15,23,42,0.15)] hover:border-[rgba(15,23,42,0.3)]"
         } ${error ? "border-red-500" : ""}`}
       >
         {/* Animated background glow */}
         {isFocused && (
           <motion.div
             layoutId={`glow-${name}`}
-            className="absolute inset-0 rounded-xl bg-gradient-to-r from-accent-500/10 via-transparent to-accent-500/10 pointer-events-none"
+            className="absolute inset-0 rounded-xl bg-gradient-to-r from-accent-500/5 via-transparent to-accent-500/5 pointer-events-none"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -63,7 +63,7 @@ export default function PremiumTextarea({
           placeholder={isFocused ? placeholder : ""}
           required={required}
           rows={rows}
-          className="relative z-10 w-full px-4 pt-6 pb-3 bg-slate-800/50 text-white placeholder-slate-500 rounded-xl outline-none transition-colors duration-300 text-base resize-none"
+          className="relative z-10 w-full px-4 pt-6 pb-3 bg-white text-[#111827] placeholder-[#475569] rounded-xl outline-none transition-colors duration-300 text-base resize-none"
         />
 
         {/* Floating label */}
@@ -76,7 +76,7 @@ export default function PremiumTextarea({
           transition={{ type: "spring", damping: 20, stiffness: 300 }}
           className="absolute left-4 top-4 text-sm font-medium pointer-events-none z-20 origin-left"
           style={{
-            color: isFocused ? "#0ea5e9" : "#cbd5e1",
+            color: isFocused ? "#0F766E" : "#475569",
           }}
         >
           {label}
@@ -89,7 +89,7 @@ export default function PremiumTextarea({
         <motion.p
           initial={{ opacity: 0, y: -5 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mt-2 text-sm text-red-400"
+          className="mt-2 text-sm text-red-500"
         >
           {error}
         </motion.p>

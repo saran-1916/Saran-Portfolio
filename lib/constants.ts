@@ -9,7 +9,7 @@ export const SITE_METADATA = {
 
 export const SOCIAL_LINKS = {
   linkedin: "https://linkedin.com/in/saran-s-palanisamy",
-  github: "https://github.com/saransp",
+  github: "https://github.com/saran-1916",
   twitter: "https://twitter.com/saran_sp",
   email: "saran.sp1916@gmail.com",
 };

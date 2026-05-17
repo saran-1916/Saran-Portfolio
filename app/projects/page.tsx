@@ -1,10 +1,10 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SectionWrapper from "@/components/SectionWrapper";
-import AnimatedBackground from "@/components/AnimatedBackground";
+import ProjectsBackground from "@/components/backgrounds/ProjectsBackground";
 import PremiumButton from "@/components/PremiumButton";
 import GlassCard from "@/components/GlassCard";
 import { projectsData } from "@/data/projects";
@@ -15,9 +15,9 @@ export default function Projects() {
   const other = projectsData.filter((p) => !p.featured);
 
   return (
-    <div className="relative min-h-screen bg-slate-950 text-slate-100 overflow-hidden">
+    <div className="relative min-h-screen bg-[#F8FAFC] text-[#111827] overflow-hidden" style={{ "--accent": "#0F766E", "--accent-dark": "#115e59" } as React.CSSProperties}>
       {/* Animated background */}
-      <AnimatedBackground />
+      <ProjectsBackground />
 
       {/* Content */}
       <div className="relative z-20">
@@ -59,7 +59,7 @@ export default function Projects() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
-                className="text-xl sm:text-2xl font-light text-slate-300 max-w-3xl mx-auto leading-relaxed mb-12"
+                className="text-xl sm:text-2xl font-light text-[#475569] max-w-3xl mx-auto leading-relaxed mb-12"
               >
                 Detailed projects showcasing engineering excellence, systems thinking, parametric design, and manufacturing-focused problem-solving.
               </motion.p>
@@ -72,7 +72,7 @@ export default function Projects() {
               transition={{ duration: 2, repeat: Infinity }}
             >
               <svg
-                className="w-6 h-6 text-slate-500"
+                className="w-6 h-6 text-[#475569]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -105,7 +105,7 @@ export default function Projects() {
                   viewport={{ once: true }}
                 />
                 <h2 className="text-5xl sm:text-6xl font-bold mb-6">Featured Projects</h2>
-                <p className="text-slate-400 text-lg max-w-2xl">
+                <p className="text-[#475569] text-lg max-w-2xl">
                   Flagship projects showcasing system architecture, parametric design, and engineering excellence.
                 </p>
               </motion.div>
@@ -127,24 +127,24 @@ export default function Projects() {
                             <p className="text-accent-400 text-sm font-bold mb-3">
                               PROJECT {index + 1}
                             </p>
-                            <h3 className="text-3xl font-bold text-slate-100 mb-4">
+                            <h3 className="text-3xl font-bold text-[#111827] mb-4">
                               {project.title}
                             </h3>
-                            <p className="text-slate-300 leading-relaxed mb-6">
+                            <p className="text-[#475569] leading-relaxed mb-6">
                               {project.shortDescription}
                             </p>
                           </div>
 
                           <div>
                             <div className="mb-6">
-                              <p className="text-sm text-slate-400 font-medium mb-2">
+                              <p className="text-sm text-[#475569] font-medium mb-2">
                                 TECHNOLOGIES
                               </p>
                               <div className="flex flex-wrap gap-2">
                                 {project.tools.slice(0, 4).map((tool) => (
                                   <span
                                     key={tool}
-                                    className="px-3 py-1 rounded-full bg-slate-700/50 text-slate-300 text-xs font-medium"
+                                    className="px-3 py-1 rounded-full bg-[rgba(15,23,42,0.06)] text-[#475569] text-xs font-medium"
                                   >
                                     {tool}
                                   </span>
@@ -197,12 +197,12 @@ export default function Projects() {
                           ].map((stat) => (
                             <div
                               key={stat.label}
-                              className="rounded-lg bg-slate-800/50 p-4 border border-slate-700/50"
+                              className="rounded-lg bg-white p-4 border border-[rgba(15,23,42,0.08)]"
                             >
                               <p className="text-2xl font-bold text-accent-400 mb-1">
                                 {stat.value}
                               </p>
-                              <p className="text-xs text-slate-400">
+                              <p className="text-xs text-[#475569]">
                                 {stat.label}
                               </p>
                             </div>
@@ -235,7 +235,7 @@ export default function Projects() {
                     viewport={{ once: true }}
                   />
                   <h2 className="text-5xl sm:text-6xl font-bold mb-6">Additional Projects</h2>
-                  <p className="text-slate-400 text-lg">
+                  <p className="text-[#475569] text-lg">
                     Other notable mechanical design work and engineering contributions.
                   </p>
                 </motion.div>
@@ -257,17 +257,17 @@ export default function Projects() {
                           <p className="text-accent-400 text-xs font-bold mb-2">
                             CASE STUDY
                           </p>
-                          <h3 className="text-xl font-bold text-slate-100 mb-3 flex-1">
+                          <h3 className="text-xl font-bold text-[#111827] mb-3 flex-1">
                             {project.title}
                           </h3>
-                          <p className="text-slate-300 text-sm mb-4 flex-1">
+                          <p className="text-[#475569] text-sm mb-4 flex-1">
                             {project.shortDescription}
                           </p>
                           <div className="flex flex-wrap gap-1 mb-4">
                             {project.tools.slice(0, 2).map((tool) => (
                               <span
                                 key={tool}
-                                className="px-2 py-1 rounded-full bg-slate-700/50 text-slate-300 text-xs font-medium"
+                                className="px-2 py-1 rounded-full bg-[rgba(15,23,42,0.06)] text-[#475569] text-xs font-medium"
                               >
                                 {tool}
                               </span>
@@ -278,7 +278,7 @@ export default function Projects() {
                             className="text-accent-400 text-sm font-medium hover:text-accent-300 transition-colors"
                             whileHover={{ x: 2 }}
                           >
-                            View Details →
+                            View Details â†’
                           </motion.a>
                         </div>
                       </GlassCard>
@@ -326,7 +326,7 @@ export default function Projects() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                   viewport={{ once: true }}
-                  className="text-xl text-slate-300 max-w-2xl mx-auto mb-12 leading-relaxed"
+                  className="text-xl text-[#475569] max-w-2xl mx-auto mb-12 leading-relaxed"
                 >
                   Let's discuss how my engineering expertise, problem-solving approach, and systems thinking can contribute to your mechanical design challenges.
                 </motion.p>

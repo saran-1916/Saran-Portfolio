@@ -18,22 +18,11 @@ export default function AnimatedDivider({
       className={`h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent rounded-full ${width} ${center ? "mx-auto" : ""}`}
       initial={{ scaleX: 0 }}
       whileInView={{ scaleX: 1 }}
-      transition={{ duration: 0.8, delay: 0.2 }}
       viewport={{ once: true }}
-      animate={
-        animated
-          ? {
-              opacity: [1, 0.5, 1],
-            }
-          : undefined
-      }
+      animate={animated ? { opacity: [1, 0.5, 1] } : undefined}
       transition={
         animated
-          ? {
-              duration: 3,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }
+          ? { duration: 3, repeat: Infinity, ease: "easeInOut" as const }
           : { duration: 0.8, delay: 0.2 }
       }
     />
